@@ -9,6 +9,7 @@ html {
 	font: normal 100% Helvetica, sans-serif;
 	box-sizing: border-box;
 	text-size-adjust: 100%;
+	background-color: lightgray;
 }
 
 *, *:before, *:after {
@@ -24,6 +25,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .current {
 	color: olive;
 }
@@ -33,15 +38,36 @@ a:hover {
 	width: 100;
 }
 
-@media only screen and (min-width: 25em)  {
+nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none !important;
 	
+}
+
+nav .logo {
+	text-align: left;
+}
+
+nav a {
+	display: block;
+}
+
+@media only screen and (min-width: 25em)  {
+	nav li {
+		display: inline-block;
+	}
+
 }
 
 @media only screen and (min-width: 38em)  {
-	
+	nav {
+		text-align: right;
+	}
 }
 
-
 @media only screen and (min-width: 60em)  {
-
+	nav {
+		text-align: right;
+	}
 }

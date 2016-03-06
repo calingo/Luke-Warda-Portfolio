@@ -1,17 +1,18 @@
 ---
 layout: default
 ---
-
-<h1>Luke Warda Porfolio</h1>
-<p>I help people interact with technology</p>
-
-<ul>
+<div class="grid">
+<div class="banner unit">
+	<h1>I help people interact with technology</h1>
+</div>
+<ul class="projects unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
 	{% for project in site.pages %}
 		{% if project.type == 'project' %}
-			<li>
+			<li class="project unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
 				<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
 				<p>{{project.subtitle}}</p>
 			</li>
 		{% endif %}
 	{% endfor %}
 </ul>
+</div>
