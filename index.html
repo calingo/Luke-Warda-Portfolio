@@ -2,5 +2,16 @@
 layout: default
 ---
 
-	<h1>Luke Warda Porfolio</h1>
-	<p>I help people interact with technology</p>
+<h1>Luke Warda Porfolio</h1>
+<p>I help people interact with technology</p>
+
+<ul>
+	{% for project in site.pages %}
+		{% if project.type == 'project' %}
+			<li>
+				<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
+				<p>{{project.subtitle}}</p>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
