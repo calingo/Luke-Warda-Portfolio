@@ -49,8 +49,12 @@ nav .logo {
 	text-align: left;
 }
 
+.projects {
+	padding-left: 0em;
+}
+
 .project {
-	background-color: darkgreen
+	background-color: yellow;
 }
 
 nav a {
