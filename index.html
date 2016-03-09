@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<div class="grid">
-<div class="banner unit">
-	<h1>I help people interact with technology</h1>
-</div>
-<ul class="projects unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-	{% for project in site.pages %}
-		{% if project.type == 'project' %}
-			<li class="project unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-				<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
-				<p>{{project.subtitle}}</p>
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+<div class="grid content-max margin-center">
+	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+		<h1>I help people interact with technology</h1>
+	</div>
+	<section class="projects-wrapper">
+		<ul class="projects">
+			{% for project in site.pages %}
+				{% if project.type == 'project' %}
+					<li class="project unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+						<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
+						<p>{{project.subtitle}}</p>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</section>
 </div>
