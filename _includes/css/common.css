@@ -1,7 +1,7 @@
 html {
 	margin: 0;
 	padding: 0;
-	font: normal 100% Helvetica, sans-serif;
+	font: normal 100% 'Graphik', serif;
 	box-sizing: border-box;
 	text-size-adjust: 100%;
 	background-color: lightgray;
@@ -29,9 +29,7 @@ ul {
 	list-style-type: none;
 }
 
-.current {
-	color: olive;
-}
+/*************Layout***************/
 
 .header-max {
 	max-width: 960px;
@@ -51,6 +49,8 @@ ul {
 	width: 100;
 }
 
+/*************Nav***************/
+
 nav {
 	margin: 0;
 	padding: 0;
@@ -61,6 +61,15 @@ nav {
 nav .logo {
 	text-align: left;
 }
+nav .current {
+	color: olive;
+}
+
+nav a {
+	display: block;
+}
+
+/*************Projects***************/
 
 .projects-wrapper {
 	width: 100%;
@@ -71,13 +80,12 @@ nav .logo {
 }
 
 .project {
-	background-color: yellow;
+	background-color: rgba(0,0,0,0.3);
 	height: 400px;
 }
 
-nav a {
-	display: block;
-}
+
+/*************Breakpoint Exceptions***************/
 
 @media only screen and (min-width: 25em)  {
 	nav li {

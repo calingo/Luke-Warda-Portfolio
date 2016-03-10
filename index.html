@@ -3,13 +3,13 @@ layout: default
 ---
 <div class="grid content-max margin-center">
 	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-		<h1>I help people interact with technology</h1>
+		<h1 class="pad-top-double pad-bottom-double gutter">Hello, I help people interact with technology</h1>
 	</div>
 	<section class="projects-wrapper">
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
-					<li class="project unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+					<li class="project unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 island">
 						<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
 						<p>{{project.subtitle}}</p>
 					</li>
