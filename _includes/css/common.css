@@ -82,8 +82,23 @@ nav a {
 }
 
 .project {
-	background-color: rgba(0,0,0,0.3);
 	height: 520px;
+}
+
+.project:nth-child(1) {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.project:nth-child(2) {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.project:nth-child(3) {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.project:nth-child(4) {
+	background-color: rgba(0,0,0,0.3);
 }
 
 
