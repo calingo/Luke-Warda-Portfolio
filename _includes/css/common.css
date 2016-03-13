@@ -83,7 +83,7 @@ nav a {
 
 .project {
 	background-color: rgba(0,0,0,0.3);
-	height: 400px;
+	height: 520px;
 }
 
 
@@ -100,10 +100,27 @@ nav a {
 	nav {
 		text-align: right;
 	}
+
+	.project_gutter {
+		width: calc(50% - 1.5rem / 2); 
+		margin-bottom: 1.5rem;
+	}
+
+	.project_gutter:nth-child(even) {
+		margin-left: calc(1.5rem / 2);
+		margin-right: 0;
+	}
+
+	.project_gutter:nth-child(odd) {
+		margin-left: 0;
+		margin-right: calc(1.5rem / 2);
+	}
+
 }
 
 @media only screen and (min-width: 60em)  {
 	nav {
 		text-align: right;
 	}
+
 }
