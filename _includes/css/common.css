@@ -106,8 +106,9 @@ nav a {
 
 .footer-links {
 	display: flex;
-	/*justify-content: space-between;*/
+	justify-content: center;
 }
+
 
 .footer-links li {
 	padding-right: 1.5rem;
@@ -115,7 +116,7 @@ nav a {
 
 .copyright {
 	float: right;
-	text-align: right;
+	text-align: center;
 }
 
 /*************Breakpoint Exceptions***************/
@@ -125,10 +126,23 @@ nav a {
 		display: inline-block;
 	}
 
+	.footer-links {
+		justify-content: center;
+	}
+
+	.copyright {
+		float: right;
+		text-align: center;
+	}
+
 }
 
 @media only screen and (min-width: 38em)  {
 	nav {
+		text-align: right;
+	}
+
+	.copyright {
 		text-align: right;
 	}
 
