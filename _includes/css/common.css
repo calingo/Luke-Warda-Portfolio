@@ -83,6 +83,7 @@ nav a {
 
 .project {
 	height: 520px;
+	filter: invert(100%);
 }
 
 .project:nth-child(1) {
@@ -101,6 +102,21 @@ nav a {
 	background-color: rgba(0,0,0,0.3);
 }
 
+/*************Footer***************/
+
+.footer-links {
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+.footer-links li {
+	padding-right: 1.5rem;
+}
+
+.copyright {
+	float: right;
+	text-align: right;
+}
 
 /*************Breakpoint Exceptions***************/
 
