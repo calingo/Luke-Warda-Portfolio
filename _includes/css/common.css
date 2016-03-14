@@ -106,12 +106,7 @@ nav a {
 
 .footer-links {
 	display: flex;
-	justify-content: center;
-}
-
-
-.footer-links li {
-	padding-right: 1.5rem;
+	justify-content: space-around;
 }
 
 .copyright {
@@ -127,7 +122,7 @@ nav a {
 	}
 
 	.footer-links {
-		justify-content: center;
+		justify-content: space-around;
 	}
 
 	.copyright {
@@ -159,6 +154,10 @@ nav a {
 	.project_gutter:nth-child(odd) {
 		margin-left: 0;
 		margin-right: calc(1.5rem / 2);
+	}
+
+	.footer-links li {
+		padding-right: 1.5rem;
 	}
 
 }
