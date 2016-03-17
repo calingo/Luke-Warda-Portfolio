@@ -104,14 +104,25 @@ nav a {
 
 /*************Footer***************/
 
+.footer {
+	padding-top: 1.5rem;
+}
+
 .footer-links {
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
+}
+
+.footer-links li {
+	padding-left: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .copyright {
 	float: right;
-	text-align: center;
+	text-align: left;
+	padding-left: 1.5rem;
 }
 
 /*************Breakpoint Exceptions***************/
@@ -119,15 +130,6 @@ nav a {
 @media only screen and (min-width: 25em)  {
 	nav li {
 		display: inline-block;
-	}
-
-	.footer-links {
-		justify-content: space-around;
-	}
-
-	.copyright {
-		float: right;
-		text-align: center;
 	}
 
 }
@@ -141,6 +143,14 @@ nav a {
 		text-align: right;
 	}
 
+	.footer-links {
+		flex-direction: row;
+	}
+
+	.footer-links li {
+		padding-left: 0rem;
+	}
+	
 	.project_gutter {
 		width: calc(50% - 1.5rem / 2); 
 		margin-bottom: 1.5rem;
