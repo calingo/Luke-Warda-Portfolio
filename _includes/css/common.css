@@ -75,6 +75,8 @@ nav a {
 
 .projects-wrapper {
 	width: 100%;
+	padding-left: 1.5rem;
+  	padding-right: 1.5rem;
 }
 
 .projects {
@@ -125,12 +127,24 @@ nav a {
 	padding-left: 1.5rem;
 }
 
+.projects-wrapper {
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+
+
 /*************Breakpoint Exceptions***************/
 
 @media only screen and (min-width: 25em)  {
 	nav li {
 		display: inline-block;
 	}
+
+	.projects-wrapper {
+		padding-left: 1.5rem;
+	  	padding-right: 1.5rem;
+	}
+
 
 }
 
@@ -175,6 +189,11 @@ nav a {
 @media only screen and (min-width: 60em)  {
 	nav {
 		text-align: right;
+	}
+
+	.projects-wrapper {
+		padding-left: 0rem;
+	  	padding-right: 0rem;
 	}
 
 }
