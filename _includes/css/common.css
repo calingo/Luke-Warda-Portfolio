@@ -4,7 +4,10 @@ html {
 	font: normal 100% 'Graphik', serif;
 	box-sizing: border-box;
 	text-size-adjust: 100%;
-	background-color: white;
+	background-color: black;
+	color: black;
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 h1 {
@@ -108,17 +111,11 @@ span.styled-link {
 /*************Banner***************/
 
 .banner {
-	padding-bottom: 3rem;
+	padding-bottom: 1.5rem;
 	padding-top: 1.5rem;
 }
 
-.heading {
-	max-width: 80%;
-}
 
-.subheading {
-	max-width: 80%;
-}
 
 /*************Projects***************/
 
@@ -134,23 +131,24 @@ span.styled-link {
 
 .project {
 	height: 520px;
+	border: 1px solid;
 	filter: invert(100%);
 }
 
 .project:nth-child(1) {
-	background-color: rgba(0,0,0,0.2);
+	/*background-color: rgba(0,0,0,0.2);*/
 }
 
 .project:nth-child(2) {
-	background-color: rgba(0,0,0,0.4);
+	/*background-color: rgba(0,0,0,0.4);*/
 }
 
 .project:nth-child(3) {
-	background-color: rgba(0,0,0,0.6);
+	/*background-color: rgba(0,0,0,0.6);*/
 }
 
 .project:nth-child(4) {
-	background-color: rgba(0,0,0,0.3);
+	/*background-color: rgba(0,0,0,0.3);*/
 }
 
 /*************Footer***************/
@@ -203,6 +201,14 @@ span.styled-link {
 	.banner {
 		padding-bottom: 6rem;
 		padding-top: 3rem;
+	}
+
+	.heading {
+		max-width: 80%;
+	}
+
+	.subheading {
+		max-width: 80%;
 	}
 
 	.projects-wrapper {
