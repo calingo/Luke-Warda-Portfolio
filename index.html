@@ -10,9 +10,9 @@ layout: default
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
-					<li class="project unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project_gutter">
+					<li class="project unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project_gutter project-image">
 						<h3 class="micro"><a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a></h3>
-						<h2 class="giga">{{project.subtitle}}</h4>
+						<h2 class="giga subtitle">{{project.subtitle}}</h4>
 					</li>
 				{% endif %}
 			{% endfor %}
