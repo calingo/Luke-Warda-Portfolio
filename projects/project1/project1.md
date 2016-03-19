@@ -2,6 +2,6 @@
 layout: default
 type: project
 folder: project1
-title: Project 1
-subtitle: This is Project 1
+title: Burberry App
+subtitle: Personal concierge service for every Burberry customer
 ---

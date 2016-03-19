@@ -6,6 +6,13 @@
 }
 
 @font-face {
+	font-family: 'CalsonPro';
+	src: url('../fonts/ACaslonPro-Italic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'Graphik';
 	src: url('../fonts/Graphik-Regular.otf') format('opentype');
 	font-weight: normal;

@@ -2,6 +2,6 @@
 layout: default
 type: project
 folder: project3
-title: Project 3
-subtitle: This is Project 3
+title: Burberry In-Store Tablet
+subtitle: Seamless online browsing in-store
 ---

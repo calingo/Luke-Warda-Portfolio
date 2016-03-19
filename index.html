@@ -3,16 +3,16 @@ layout: default
 ---
 <div class="grid margin-center content-max">
 	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-		<h1 class="pad-top-double heading gutter yotta">Hello, I help people interact with technology <span class="styled-link">@Burberry</span></h1>
-		<h2 class="pad-bottom-double heading gutter giga">London based Product Design Lead with 10 years of experience in design and usability for mobile, omni-channel and new technologies.</h1>
+		<h1 class="pad-top-double heading gutter yotta">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
+		<h2 class="pad-bottom-double subheading gutter giga">Here is a selection of projects I've lead during the past 5 years.</h2>
 	</div>
 	<section class="projects-wrapper">
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
 					<li class="project unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project_gutter">
-						<a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a>
-						<p>{{project.subtitle}}</p>
+						<h3 class="micro"><a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a></h3>
+						<h2 class="giga">{{project.subtitle}}</h4>
 					</li>
 				{% endif %}
 			{% endfor %}
