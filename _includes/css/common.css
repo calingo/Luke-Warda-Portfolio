@@ -85,10 +85,24 @@ ul {
 
 nav {
 	margin: 0;
-	padding: 0;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	list-style-type: none !important;
 	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
+
+nav .nav-links {
+	float: right;
+	display: inline-flex;
+}
+
+nav .nav-links li {
+	padding-left: 1.5rem;
+}
+
 
 nav .logo {
 	text-align: left;
@@ -194,6 +208,7 @@ span.styled-link {
 /*************Breakpoint Exceptions***************/
 
 @media only screen and (min-width: 25em)  {
+
 	nav li {
 		display: inline-block;
 	}
@@ -237,13 +252,18 @@ span.styled-link {
 		margin-bottom: 1.5rem;
 	}
 
+	nav {
+		text-align: right;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+
+	}
+
 
 }
 
 @media only screen and (min-width: 38em)  {
-	nav {
-		text-align: right;
-	}
+
 
 	.footer-wrapper{
 		padding-left: 0rem;
@@ -252,8 +272,11 @@ span.styled-link {
 	
 
 @media only screen and (min-width: 60em)  {
+
 	nav {
-		text-align: right;
+		padding-left: 0rem;
+		padding-right: 0rem;
+
 	}
 
 	.projects-wrapper {
