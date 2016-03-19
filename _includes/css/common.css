@@ -133,20 +133,23 @@ span.styled-link {
 }
 
 .project:nth-child(1) {
-	/*background-color: rgba(0,0,0,0.2);*/
+	background-color: #DCDCDC;
 }
 
 .project:nth-child(2) {
-	/*background-color: rgba(0,0,0,0.4);*/
+	background-color: #89B78D;
 }
 
 .project:nth-child(3) {
-	/*background-color: rgba(0,0,0,0.6);*/
+	background-color: #FF7E36;
 }
 
 .project:nth-child(4) {
-	/*background-color: rgba(0,0,0,0.3);*/
+	background-color: #E1D6C4;
 }
+
+
+
 
 /*************Footer***************/
 
