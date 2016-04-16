@@ -4,8 +4,8 @@ html {
 	font: normal 100% 'Graphik', sans-serif;
 	box-sizing: border-box;
 	text-size-adjust: 100%;
-	background-color: #111111;
-	color: white;
+	background-color: white;
+	color: #111;
 /*	-webkit-filter: invert(100%);
 	filter: invert(100%);*/
 	
@@ -20,15 +20,15 @@ h2 {
 }
 
 h3 {
-	font: normal 100% 'Graphik', sans-serif;
+	font: bold 100% 'Graphik', sans-serif;
 }
 
 h4 {
-	font: normal 100% 'Graphik', sans-serif;
+	font: bold 100% 'Graphik', sans-serif;
 }
 
 h5 {
-	font: normal 100% 'Graphik', sans-serif;
+	font: bold 100% 'Graphik', sans-serif;
 }
 
 *, *:before, *:after {
@@ -55,10 +55,23 @@ ul {
 	list-style-type: none;
 }
 
+.header-big {
+	font-size: 3rem;
+	animation-name: fadeUp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    margin-top: 10px;
+}
+
+.logo-underline {
+	height: 1px;
+	width: 100%;
+	background-color: black;
+	margin-top: 0.5rem;
+	margin-top: 10px;
+}
+
 /*************Layout***************/
-
-
-
 
 .margin-center {
 	margin-left: auto !important;
@@ -80,6 +93,7 @@ ul {
 
 .viewport-max {
 	width: 100vw;
+	margin-left: 0 !important;
 }
 
 .span-90 {
@@ -98,6 +112,10 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	animation-name: fadeUp;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    margin-top: 10px;
 }
 
 nav .nav-links {
@@ -130,17 +148,17 @@ span.styled-link {
 /*************Banner***************/
 
 .banner {
+	padding-top: 2rem;
 	padding-bottom: 6rem;
-	padding-top: 6rem;
 }
 
 .heading {
-	max-width: 90%;
+	max-width: 95%;
 }
 
 .subheading {
 	max-width: 95%;
-	opacity: 0.5
+	opacity: 0.5;
 }
 
 
@@ -158,43 +176,88 @@ span.styled-link {
 
 .project {
 	height: 520px;
-	/*border: 1px solid #1a1a1a;*/
+	position: relative;
+    overflow: hidden;
+
 }
 
 .project:nth-child(1) {
-/*	background-color: #1a1a1a;*/
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .project:nth-child(2) {
-/*	background-color: #2d2d2d;*/
+	background-color: rgba(208,205,182,1);
 }
 
 .project:nth-child(3) {
-/*	background-color: #1a1a1a;*/
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	text-shadow: 0px 0px 3px black;
 }
 
 .project:nth-child(4) {
-/*	background-color: #2d2d2d;*/
+	background-color: rgba(247,247,247,1);
 }
+
+.project:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.project:nth-child(1):before {
+	background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
+    background-size: 190%;
+    opacity: 0.6
+}
+
+.project:nth-child(2):before {
+	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 80% 20%; 
+    background-size: 80%;
+}
+
+.project:nth-child(3):before {
+	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
+    background-size: 200%;
+    opacity: 0.6;
+}
+
+.project:nth-child(4):before {
+	background: url('http://assets4.howtospendit.ft-static.com/images/9e/f6/dd/9ef6dd76-d0fa-4e88-b299-b0137331fd81_three_eighty.png') no-repeat right 30%; 
+    background-size: 80%;
+
+}
+
+
 
 .project-image {
 	/*width: 100vw;*/
-	background: url('../img/project-img-placeholder.png') no-repeat center right; 
-	-webkit-background-size: 90%;
+/*	-webkit-background-size: 90%;
 	-moz-background-size: 90%;
 	-o-background-size: 90%;
 	background-size: 90%;
-	height: 600px;
+	height: 550px;*/
 	/*margin-left: -1.5rem;*/
 }
 
-.project_gutter {
-	/*margin-bottom: 1px;*/
+.project-title {
+	max-width: 85%;
+	opacity: 1;
+	z-index: 2;
+	position: absolute;
+    bottom: 1.5rem;
 }
 
 .subtitle {
-	max-width: 90%;
-	opacity: 0.5
+	
 }
 
 
@@ -228,11 +291,22 @@ span.styled-link {
 	display: none;
 }
 
-
-
 .footer-links li {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+/*************Animations***************/
+
+
+@keyframes fadeUp {
+    from {opacity: 0; margin-top: 0px;}
+    to {opacity: 1; margin-top: 10px;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
@@ -243,6 +317,11 @@ span.styled-link {
 	nav li {
 		display: inline-block;
 	}
+
+	.project-title {
+		max-width: 50%;
+	}
+
 
 	.banner {
 		padding-bottom: 10rem;
@@ -287,12 +366,14 @@ span.styled-link {
 
 @media only screen and (min-width: 38em)  {
 
-
 	.footer-wrapper{
 		padding-left: 0rem;
 	    padding-right: 0rem;
 	}
 	
+	.project-title {
+		max-width: 90%;
+	}
 
 @media only screen and (min-width: 60em)  {
 
