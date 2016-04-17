@@ -149,7 +149,7 @@ span.styled-link {
 
 .banner {
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .heading {
@@ -301,23 +301,38 @@ span.styled-link {
     z-index: 1;
 }
 
-.project-cover:before {
+.project1 .project-cover:before {
 	background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
     background-size: cover;
 }
 
+.project2 .project-cover:before {
+	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 10% 10%; 
+    background-size: cover;
+}
+
+.project3 .project-cover:before {
+	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
+    background-size: 50%;
+}
+
+.project4 .project-cover:before {
+	background: url('http://assets4.howtospendit.ft-static.com/images/9e/f6/dd/9ef6dd76-d0fa-4e88-b299-b0137331fd81_three_eighty.png') no-repeat right 30%; 
+    background-size: 50%;
+}
+
 .project-detail .section1 {
-	height: 520px;
+	height: 720px;
 	background-color: rgba(0,0,0,0.1);
 }
 
 .project-detail .section2 {
-	height: 520px;
+	height: 720px;
 	background-color: rgba(0,0,0,0.3);
 }
 
 .project-detail .section3 {
-	height: 520px;
+	height: 720px;
 	background-color: rgba(0,0,0,0.1);
 }
 
@@ -326,7 +341,7 @@ span.styled-link {
 }
 
 .project-detail .banner {
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .project-detail .header-big {
