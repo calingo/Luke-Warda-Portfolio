@@ -449,8 +449,8 @@ span.styled-link {
 	}
 
 	.banner {
-		padding-bottom: 10rem;
-		padding-top: 6rem;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
 	}
 
 	.projects-wrapper {
@@ -486,6 +486,10 @@ span.styled-link {
 
 	}
 
+	.header-big {
+		font-size:5rem;
+	}
+
 
 }
 
@@ -500,6 +504,7 @@ span.styled-link {
 		max-width: 90%;
 	}
 
+	
 
 
 @media only screen and (min-width: 60em)  {
@@ -508,6 +513,11 @@ span.styled-link {
 		padding-left: 0rem;
 		padding-right: 0rem;
 
+	}
+
+	.gutter {
+		padding-left: 0rem;
+	    padding-right: 0rem;
 	}
 
 	.footer-wrapper{
