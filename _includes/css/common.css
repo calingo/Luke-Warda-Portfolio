@@ -471,10 +471,6 @@ span.styled-link {
 		max-width: 50%;
 	}
 
-	.project-detail .header-big {
-		font-size: 5rem;
-	}
-
 	.banner {
 		padding-bottom: 2rem;
 		padding-top: 2rem;
@@ -531,8 +527,6 @@ span.styled-link {
 		max-width: 90%;
 	}
 
-	
-
 
 @media only screen and (min-width: 60em)  {
 
@@ -578,5 +572,10 @@ span.styled-link {
 		margin-left: 0;
 		margin-right: calc(1.5rem / 2);
 	}
+
+	.project-detail .header-big {
+		font-size: 5rem;
+	}
+	
 
 }
