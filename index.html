@@ -2,22 +2,26 @@
 layout: default
 ---
 <div class="grid margin-center content-max">
-	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-		<h1 class="pad-top-double heading gutter header-big">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
-		<!-- <h2 class="pad-bottom-double subheading gutter giga">Here is a selection of projects I've lead during the past 5 years.</h2> -->
+	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 scene_element">
+		<h1 class="heading header-big gutter ">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
+		<h3 class="gutter giga subheading">A selection of projects</h3>
 	</div>
 	<section class="projects-wrapper">
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
-				<div class="project project_gutter">
-					<li class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project-image">
-						<div class="project-title">
-							<h3 class="micro"><a href="{{site.baseurl}}/projects/{{project.folder}}">{{project.title}}</a></h3>
-							<h2 class="giga subtitle">{{project.subtitle}}</h2>
-						</div>
-					</li>
-				</div>
+				
+					<div class="project project_gutter scene_element scene_element--fadeinup">
+						<a href="{{site.baseurl}}/projects/{{project.folder}}" class="project-link" id="#{{project.folder}}">
+								<li class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project-image">
+									<div class="project-title">
+										<h3 class="micro">{{project.title}}</h3>
+										<h2 class="giga subtitle">{{project.subtitle}}</h2>
+									</div>
+								</li>
+						</a>
+					</div>
+				
 				{% endif %}
 			{% endfor %}
 		</ul>

@@ -2,6 +2,22 @@
 layout: default
 ---
 
-<h1 class="gutter">Project 1</h1>
-
+<div class="project-detail" id="">
+	
+  	<div class="content-max margin-center" >
+  		<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+				{% for project in site.pages %}
+					{% if project.folder == 'project1' %}
+						<h1 class="gutter header-big">{{project.subtitle}}</h1>
+						<h3 class="gutter giga subheading">{{project.tags}}</h3>
+					{% endif %}
+				{% endfor %}
+		</div>		
+  	</div>
+  	<div class="project-cover scene_element scene_element--fadeinup">
+  	</div>
+	<div class="section1"></div>
+	<div class="section2"></div>
+	<div class="section3"></div>
+</div>
 
