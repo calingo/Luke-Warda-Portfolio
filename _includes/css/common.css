@@ -324,17 +324,26 @@ span.styled-link {
 .project-detail .section1 {
 	height: 720px;
 	background-color: rgba(0,0,0,0.1);
+	background: url('http://49.media.tumblr.com/c7120a7e31d2fc618ebf7b436bad676c/tumblr_o0sorxdRGB1teiv9io5_540.gif') no-repeat center 30%; 
+    background-size: cover;
 }
 
 .project-detail .section2 {
 	height: 720px;
 	background-color: rgba(0,0,0,0.3);
+	background: url('http://ftape.com/media/wp-content/uploads/2014/03/SS14_MC_BTS_SHOT_11_JAN.jpg') no-repeat center 30%; 
+    background-size: cover;
 }
 
 .project-detail .section3 {
 	height: 720px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.3);
+	background: url('https://media.giphy.com/media/yoJC2zCJlU7pYJ44gw/giphy.gif') no-repeat center 30%; 
+    background-size: cover;
 }
+
+
+
 
 .project-detail-title {
 	font-size: 2rem;
