@@ -164,7 +164,7 @@ span.styled-link {
 }
 
 .header-big {
-	font-size:3.6rem;
+	font-size:3rem;
 }
 
 /*************Projects***************/
@@ -266,7 +266,7 @@ span.styled-link {
 	opacity: 1;
 	z-index: 2;
 	position: absolute;
-    bottom: 1.5rem;
+    bottom: 0.5rem;
 }
 
 .subtitle {
@@ -354,7 +354,7 @@ span.styled-link {
 }
 
 .project-detail .header-big {
-	font-size: 2.2rem;
+	font-size: 1.8rem;
 }
 
 /*************Footer***************/
@@ -459,12 +459,27 @@ span.styled-link {
   }
 }
 
+@media only screen and (min-width: 22em) {
+	.header-big {
+		font-size:3.6rem;
+	}
+
+	.project-detail .header-big {
+		font-size: 2.2rem;
+	}
+
+}
+
 /*************Breakpoint Exceptions***************/
 
 @media only screen and (min-width: 25em)  {
 
 	nav li {
 		display: inline-block;
+	}
+
+	.subtitle {
+		max-width: 70%;
 	}
 
 	.project-title {
@@ -534,6 +549,10 @@ span.styled-link {
 		padding-left: 0rem;
 		padding-right: 0rem;
 
+	}
+
+	.subtitle {
+		max-width: 95%;
 	}
 
 	.header-padding {
