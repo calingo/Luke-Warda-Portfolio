@@ -55,6 +55,26 @@ ul {
 	list-style-type: none;
 }
 
+/*************Icons***************/
+/*SVG Icons - svgicons.sparkk.fr*/
+/*************Layout***************/
+
+.svg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #000000;
+}
+
+.svg-icon circle {
+  stroke: #000000;
+  stroke-width: 1;
+}
+
 /*************Layout***************/
 
 .margin-center {
@@ -106,7 +126,6 @@ nav {
 nav .nav-links {
 	float: right;
 	display: inline-flex;
-	/*font-weight: bolder;*/
 }
 
 nav .nav-links li {
@@ -116,7 +135,7 @@ nav .nav-links li {
 
 nav .logo {
 	text-align: left;
-	/*font-weight: bold;*/
+	padding-top: 0.2rem;
 }
 
 
@@ -142,6 +161,16 @@ span.styled-link {
 
 .header-padding {
 	padding-top: 1.5rem;
+}
+
+.profile-small {
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      background: url('https://cdn-images-1.medium.com/fit/c/200/200/0*Xnwdb3j7KPQmUZ-0.jpeg') no-repeat center;
+      background-size: cover;
 }
 
 
@@ -548,7 +577,25 @@ span.styled-link {
 	nav {
 		padding-left: 0rem;
 		padding-right: 0rem;
+	}
 
+	.svg-icon {
+	  width: 2.5rem;
+	  height: 2.5rem;
+	}
+
+	nav .logo {
+		font-size: larger;
+	}
+
+	.profile-small {
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: url('https://cdn-images-1.medium.com/fit/c/200/200/0*Xnwdb3j7KPQmUZ-0.jpeg') no-repeat center;
+      background-size: cover;
 	}
 
 	.subtitle {
