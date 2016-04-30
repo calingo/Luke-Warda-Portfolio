@@ -2,7 +2,7 @@
 layout: default
 type: project
 folder: project1
-title: Burberry's Native App
-subtitle: Personal concierge service for every Burberry customer
+title: COMING SOON
+subtitle: A new beat for luxury service
 tags: UX Lead - Burberry - 2016
 ---

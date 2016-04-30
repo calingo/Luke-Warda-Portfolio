@@ -2,7 +2,7 @@
 layout: default
 type: project
 folder: project2
-title: Burberry's Mobile Web
-subtitle: If you’re not driving car, go to Burberry’s mobile website right now
+title: Burberry 
+subtitle: Connecting mobile customers with a luxury giant
 tags: UX Lead - Burberry - 2015
 ---

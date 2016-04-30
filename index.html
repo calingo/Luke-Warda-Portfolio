@@ -2,11 +2,13 @@
 layout: default
 ---
 <div class="grid margin-center content-max">
-	<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 scene_element">
-		<h1 class="heading header-big gutter ">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
-		<h3 class="gutter giga subheading">A selection of projects</h3>
-	</div>
-	<section class="projects-wrapper">
+	<section id="home">
+		<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 scene_element scene_element--fadein">
+			<h1 class="heading header-big gutter ">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
+			<h3 class="gutter giga subheading">A selection of projects</h3>
+		</div>
+	</section>
+	<section id="projects" class="projects-wrapper">
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
@@ -15,7 +17,7 @@ layout: default
 						<a href="{{site.baseurl}}/projects/{{project.folder}}" class="project-link" id="#{{project.folder}}">
 								<li class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project-image">
 									<div class="project-title">
-										<h3 class="micro">{{project.title}}</h3>
+										<h3 class="micro text-upper">{{project.title}}</h3>
 										<h2 class="giga subtitle">{{project.subtitle}}</h2>
 									</div>
 								</li>
@@ -25,5 +27,12 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		</ul>
+	</section>
+	<section id="about-short" class="about-short">
+		<div class="heading giga gutter unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 scene_element scene_element--fadein">
+			<h3 class="micro text-upper">About me</h3>
+			<p class="">My name is Luke and I am a London based User Experience & Product Design Lead with 10 years of experience in design and usability, team lead for award-winning Mobile, Tablet & Web solutions that satisfy consumers’ needs, champion technology use, as well as fulfil commercial and brand requirements for world's most influential brands. Since 2013 having fun <span class="italic">@Burberry</span></p>
+		</div>
+
 	</section>
 </div>

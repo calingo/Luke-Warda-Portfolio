@@ -23,11 +23,11 @@
 $(function(){
   'use strict';
   var options = {
-    prefetch: true,
-    cacheLength: 0,
+    prefetch: false,
+    cacheLength: 2,
     scroll: true,
     onStart: {
-      duration: 500, // Duration of our animation
+      duration: 300, // Duration of our animation
       render: function ($container) {
         // Add your CSS animation reversing class
         $container.addClass('is-exiting');
