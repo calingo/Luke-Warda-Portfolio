@@ -25,3 +25,17 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('../fonts/CooperHewitt-Book.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('../fonts/CooperHewitt-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}

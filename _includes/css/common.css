@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-	font: normal 100% 'Graphik', serif;
+	font: normal 100% 'Graphik', sans-serif;
 }
 
 h3 {
@@ -160,6 +160,7 @@ nav .logo > a:before {
   transform: translateY(0.4rem);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
 }
 
 nav .logo > a:hover:before {
@@ -202,6 +203,25 @@ span.styled-link {
       background-size: cover;
 }
 
+.back-hidden {
+	display: none;
+}
+
+/*************Styles***************/
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.underline:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+}
 
 /*************Banner***************/
 
@@ -216,7 +236,6 @@ span.styled-link {
 
 .subheading {
 	max-width: 95%;
-	opacity: 0.5;
 	font-weight: normal;
 	font-size: large;
 }
