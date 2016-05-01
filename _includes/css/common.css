@@ -6,6 +6,7 @@ html {
 	text-size-adjust: 100%;
 	background-color: white;
 	color: #111;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 h1 {
@@ -160,7 +161,7 @@ nav .logo > a:before {
   transform: translateY(0.4rem);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 nav .logo > a:hover:before {

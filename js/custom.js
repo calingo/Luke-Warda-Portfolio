@@ -27,7 +27,7 @@ $(function(){
     cacheLength: 2,
     scroll: true,
     onStart: {
-      duration: 300, // Duration of our animation
+      duration: 50, // Duration of our animation
       render: function ($container) {
         // Add your CSS animation reversing class
         $container.addClass('is-exiting');
