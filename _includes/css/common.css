@@ -178,6 +178,10 @@ nav .logo > a:hover:before {
 	display: none;
 }
 
+.logotype {
+	font-size: larger;
+}
+
 nav .current {
 	color: olive;
 }
@@ -202,6 +206,10 @@ span.styled-link {
       border-radius: 20px;
       background: url('https://cdn-images-1.medium.com/fit/c/200/200/0*Xnwdb3j7KPQmUZ-0.jpeg') no-repeat center;
       background-size: cover;
+}
+
+.back-shown {
+	margin-top: -2px;
 }
 
 .back-hidden {
@@ -495,6 +503,10 @@ span.styled-link {
 	padding-bottom: 1rem;
 }
 
+/*************Scetions***************/
+
+padd
+
 /*************Animations***************/
 
   /** Basic styles for an animated element */
@@ -664,7 +676,7 @@ span.styled-link {
 	}
 
 	nav .logo {
-		font-size: larger;
+		/*font-size: larger;*/
 	}
 
 	.profile-small {
