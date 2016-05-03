@@ -392,7 +392,7 @@ span.styled-link {
 
 .project1 .project-cover:before {
 	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 30%; 
-    background-size: 500%;
+    background-size: 150%;
 }
 
 .project2 .project-cover:before {
@@ -414,8 +414,8 @@ span.styled-link {
 .project-detail .section1 {
 	height: 680px;
 	background-color: rgba(0,0,0,0.1);
-	background: url('http://49.media.tumblr.com/c7120a7e31d2fc618ebf7b436bad676c/tumblr_o0sorxdRGB1teiv9io5_540.gif') no-repeat center 30%; 
-    background-size: cover;
+	background: url('https://s-media-cache-ak0.pinimg.com/originals/44/a7/8e/44a78e85028c0a843e0f1e0cd7786d31.gif') no-repeat center 30%; 
+    background-size: 150%;
 }
 
 .project-detail .section2 {
@@ -504,8 +504,6 @@ span.styled-link {
 }
 
 /*************Scetions***************/
-
-padd
 
 /*************Animations***************/
 
