@@ -1,12 +1,13 @@
-<nav>
-	<h4 class="logo">
-		<a href="{{site.baseurl}}/index.html"><span class="back-shown {% if page.type == 'home' %}back-hidden{% endif %}">&#8592;  </span><span class="logotype {% if page.type == 'home' %}logotype-home{% endif %}">Luke Warda</span></a>
-	</h4>
+<nav class="gutter">
 	<ul class="nav-links">
 		<!-- <li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/index.html' %}current{% endif %}">Projects</a></li> -->
 		<li><a href="{{site.baseurl}}/contact.html">
-			<div class="profile-small"></div>
+			<div class="profile-small {% if page.type == 'contact' %}back-hidden{% endif %}"></div>
 		</a></li>
 	</ul>
+	<h4 class="logo">
+		<a href="{{site.baseurl}}/index.html"><span class="back-shown {% if page.type == 'home' %}back-hidden{% endif %}">&#8592;  </span><span class="logotype {% if page.type == 'home' %}logotype-home{% endif %}">Luke Warda</span></a>
+	</h4>
+	
 
 </nav>

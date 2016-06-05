@@ -90,7 +90,7 @@ ul {
 }
 
 .content-max {
-	max-width: 820px;
+	max-width: 780px;
 }
 
 .viewport-max {
@@ -107,8 +107,20 @@ ul {
     padding-right: 1.5rem;
 }
 
+.header-padding-push {
+	padding-top: 6rem;
+}
+
 
 /*************Nav***************/
+
+header {
+	position: absolute;
+	left: 0;
+    right: 0;
+}
+
+}
 
 nav {
 	margin: 0;
@@ -116,9 +128,8 @@ nav {
 	padding-right: 1.5rem;
 	list-style-type: none !important;
 	text-align: right;
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
-	width: 100%;
 }
 
 nav .nav-links {
@@ -142,6 +153,7 @@ nav .nav-links li > a:hover {
 nav .logo {
 	text-align: left;
 	padding-top: 0.2rem;
+	display: flex;
 }
 
 nav .logo > a {
@@ -153,7 +165,7 @@ nav .logo > a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: black;
@@ -161,7 +173,7 @@ nav .logo > a:before {
   transform: translateY(0.4rem);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 nav .logo > a:hover:before {
@@ -210,6 +222,8 @@ span.styled-link {
 
 .back-shown {
 	margin-top: -2px;
+	opacity: 1;
+	display: none;
 }
 
 .back-hidden {
@@ -235,7 +249,7 @@ span.styled-link {
 /*************Banner***************/
 
 .banner {
-	padding-top: 1.5rem;
+	padding-top: 2rem;
 	padding-bottom: 1.5rem;
 }
 
@@ -251,6 +265,7 @@ span.styled-link {
 
 .header-big {
 	font-size:3rem;
+	letter-spacing: -0.1rem;
 }
 
 /*************Projects***************/
@@ -321,9 +336,9 @@ span.styled-link {
 }
 
 .project:nth-child(2):before {
-/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 80% 20%; 
-*/  background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat 85% 0px; 
-    background-size: cover;
+	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
+  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat 85% 0px; 
+   */ background-size: 100%;
 }
 
 .project:nth-child(3):before {
@@ -441,11 +456,11 @@ span.styled-link {
 }
 
 .project-detail .header-big {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .project-detail .project-intro {
-	padding-top: 1.5rem;
+	padding-top: 2rem;
 }
 
 .project-detail .quote-overlay-white {
@@ -511,6 +526,39 @@ span.styled-link {
 	z-index: -1;
 
 }
+
+.contact-cover {
+	background-color: #dddddd;
+	width: 100vw;
+	z-index: -1;
+	height: 400px;
+	top: 0;
+	position: relative;
+    overflow: hidden;
+}
+
+.contact-cover:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+    background: url('/img/project-burberry-mobileweb/Luke-Warda-Profile-Small.png') no-repeat -80px; 
+    background-size: 160%;
+    opacity: 1;
+
+
+}
+
+#about-intro .banner {
+	padding-top: 3rem;
+	padding-bottom: 0rem;
+}
+
 
 /*************Sections***************/
 
@@ -587,7 +635,7 @@ span.styled-link {
 	}
 
 	.project-detail .header-big {
-		font-size: 2.2rem;
+		font-size: 3.6rem;
 	}
 
 }
@@ -702,6 +750,12 @@ span.styled-link {
 
 	.header-padding {
 		padding-top: 2rem;
+	}
+
+	.banner {
+		
+		padding-top: 6rem;
+		padding-bottom: 1.5rem;
 	}
 
 	.gutter {
