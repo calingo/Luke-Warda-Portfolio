@@ -53,6 +53,7 @@ ul {
 	list-style-type: none;
 }
 
+
 /*************Icons***************/
 /*SVG Icons - svgicons.sparkk.fr*/
 /*************Layout***************/
@@ -93,6 +94,10 @@ ul {
 	max-width: 780px;
 }
 
+.article-max {
+	max-width: 700px;
+}
+
 .viewport-max {
 	width: 100vw;
 	margin-left: 0 !important;
@@ -118,6 +123,7 @@ header {
 	position: absolute;
 	left: 0;
     right: 0;
+    z-index: 100;
 }
 
 }
@@ -287,24 +293,30 @@ span.styled-link {
 }
 
 .project:nth-child(1) {
-	color: white;
+	/*color: white;*/
 	/*text-shadow: 0px 0px 3px black;*/
-	background-color: rgba(0, 0, 0, 1);
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	background-color: #EEEEEE;
+
 }
 
 .project:nth-child(2) {
+	color: white;
 	/*background-color: rgba(208,205,182,1);*/
-	background-color: #EEEEEE;
+	background-color: gray;
 }
 
 .project:nth-child(3) {
-	background-color: rgba(0, 0, 0, 1);
-	color: white;
-	/*text-shadow: 0px 0px 3px black;*/
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	background-color: #EEEEEE;
+	/*color: white;
+*/	/*text-shadow: 0px 0px 3px black;*/
 }
 
 .project:nth-child(4) {
-	background-color: rgba(247,247,247,1);
+	/*background-color: rgba(233,233,233,1);*/
+	background-color: black;
+	color: white;
 }
 
 .project:before {
@@ -329,27 +341,33 @@ span.styled-link {
 }
 
 .project:nth-child(1):before {
-	background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
-   	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 30%; 
-    background-size: 340%;
+	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
+   	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 30%; */
+    background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat -45% -50px; 
+    background-size: 170%;
     opacity: 0.9
 }
 
 .project:nth-child(2):before {
-	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
-  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat 85% 0px; 
-   */ background-size: 100%;
+/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
+*/  background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Holdinghand.svg') no-repeat 85% 0px; 
+    background-size: 240%;
 }
 
 .project:nth-child(3):before {
-	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
-    background-size: 230%;
-    opacity: 0.6;
+/*	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
+    background-size: 230%;*/
+    opacity: 1;
+    background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; 
+    background-size: 150%;
 }
 
 .project:nth-child(4):before {
-	background: url('http://assets4.howtospendit.ft-static.com/images/9e/f6/dd/9ef6dd76-d0fa-4e88-b299-b0137331fd81_three_eighty.png') no-repeat right 30%; 
-    background-size: 80%;
+
+	
+	background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
+	background-position: right 50% bottom 4rem;
+    background-size: 180%;
 
 }
 
@@ -381,11 +399,9 @@ span.styled-link {
 	
 }
 
-
-
 .project-cover {
 	background-color: #EEEEEE;
-	width: 100vw;
+	/*width: 100vw;*/
 	z-index: -1;
 	height: 600px;
 	top: 0;
@@ -422,8 +438,8 @@ span.styled-link {
 }
 
 .project4 .project-cover:before {
-	background: url('http://assets4.howtospendit.ft-static.com/images/9e/f6/dd/9ef6dd76-d0fa-4e88-b299-b0137331fd81_three_eighty.png') no-repeat right 30%; 
-    background-size: 50%;
+/*	background: url('http://assets4.howtospendit.ft-static.com/images/9e/f6/dd/9ef6dd76-d0fa-4e88-b299-b0137331fd81_three_eighty.png') no-repeat right 30%; 
+*/    background-size: 50%;
 }
 
 .project-detail .section1 {
@@ -436,7 +452,7 @@ span.styled-link {
 .project-detail .section2 {
 	height: 680px;
 	background-color: rgba(0,0,0,0.3);
-	background: url('http://ftape.com/media/wp-content/uploads/2014/03/SS14_MC_BTS_SHOT_11_JAN.jpg') no-repeat center 30%; 
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat center 30%; 
     background-size: cover;
 }
 
@@ -528,13 +544,14 @@ span.styled-link {
 }
 
 .contact-cover {
-	background-color: #dddddd;
-	width: 100vw;
+	background-color: white;
+/*	width: 100vw;*/
 	z-index: -1;
-	height: 400px;
+	height: 500px;
 	top: 0;
 	position: relative;
     overflow: hidden;
+   /* display: none;*/
 }
 
 .contact-cover:before {
@@ -547,15 +564,17 @@ span.styled-link {
     height: 100%;
     opacity: 1;
     z-index: 1;
-    background: url('/img/project-burberry-mobileweb/Luke-Warda-Profile-Small.png') no-repeat -80px; 
-    background-size: 160%;
+    background: url('/img/project-burberry-mobileweb/Luke-Warda-Profile-Big.png') no-repeat;
+    background-position: right -10% top -60px; 
+    background-size: 25%;
     opacity: 1;
 
 
 }
 
 #about-intro .banner {
-	padding-top: 3rem;
+	margin-top: -14rem;
+	padding-top: 0rem;
 	padding-bottom: 0rem;
 }
 
@@ -640,7 +659,45 @@ span.styled-link {
 
 }
 
+svg {
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: solid 2px;
+}
+
+
+svg path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: dash 3s ease-in-out forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /*************Breakpoint Exceptions***************/
+
+@media only screen and (max-width: 25em)  {
+	
+	.gutter {
+    	padding-right: 1.4rem;
+	}
+	
+	.giga {
+		font-size: 1.05rem;
+	    line-height: 1.69rem;
+	}
+
+	.project-cover {
+		height: 400px;
+	}
+
+}
 
 @media only screen and (min-width: 25em)  {
 

@@ -6,17 +6,17 @@ type: home
 	<section id="home">
 		<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 scene_element scene_element--fadein">
 			<h1 class="heading header-big gutter ">User Experience &amp; Product Design Lead <!-- <span class="styled-link">@Burberry</span> --></h1>
-			<h3 class="gutter giga subheading opacity-50">A selection of projects</h3>
+			<h3 class="gutter giga subheading">Selection of projects</h3>
 		</div>
 	</section>
-	<section id="projects" class="projects-wrapper">
+	<section id="projects" class="viewport-max">
 		<ul class="projects">
 			{% for project in site.pages %}
 				{% if project.type == 'project' %}
 				
 					<div class="project project_gutter scene_element scene_element--fadein">
 						<a href="{{site.baseurl}}/projects/{{project.folder}}" class="project-link" id="#{{project.folder}}">
-								<li class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 island project-image">
+								<li class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-1 island project-image">
 									<div class="project-title">
 										<h3 class="micro text-upper">{{project.title}}</h3>
 										<h2 class="giga subtitle">{{project.subtitle}}</h2>
