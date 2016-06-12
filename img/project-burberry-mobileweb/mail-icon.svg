@@ -1,0 +1,19 @@
+
+<svg width="33px" height="24px" viewBox="938 49 33 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 15.6074288 11.5719426 31.2148566 0 31.2148566 23.1438863 0 23.1438863"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="31.2148566" height="23.1438863" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="31.2148566" height="23.1438863"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="31.2148566" height="23.1438863" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(938.752991, 49.000000)">
+        <use id="Rectangle-40" stroke="#000000" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+        <use id="Rectangle-40" stroke="#000000" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+    </g>
+</svg>
