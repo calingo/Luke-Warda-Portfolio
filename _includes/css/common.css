@@ -356,12 +356,13 @@ span.styled-link {
 }
 
 .project:nth-child(1):before {
-	background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
+	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
    	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 50%; 
-/*    background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat -45% -50px; 
-*/  height: 400px;
-	background-size: 300%;
-    opacity: 1
+    */background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat -45% -50px; 
+  	height: 600px;
+	background-size: 170%;
+    opacity: 1;
+    background-color: #eee;
 }
 
 .project:nth-child(2):before {
@@ -369,8 +370,8 @@ span.styled-link {
 */  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Holdinghand.svg') no-repeat 85% 0px; */
     
     background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat left 30% top 0px; 
-    background-size: 130%;
-    height: 400px;
+    background-size: 180%;
+    height: 600px;
 }
 
 .project:nth-child(3):before {
@@ -379,8 +380,8 @@ span.styled-link {
     opacity: 1;
     /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
     background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% top 0px ; 
-    background-size: 160%;
-    height: 400px;
+    background-size: 220%;
+    height: 600px;
 }
 
 .project:nth-child(4):before {
@@ -391,14 +392,14 @@ span.styled-link {
     width: 100%;
     height: 100%;*/
 	background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
-	background-position: right -10px bottom 150px;
+	background-position: right -10px bottom 200px;
     background-size: 100%;
       -webkit-transform: rotate(-0deg);
 	  -moz-transform: rotate(-0deg);
 	  -ms-transform: rotate(-0deg);
 	  -o-transform: rotate(-0deg);
 	  transform: rotate(-0deg);
-	height: 400px;
+	height: 600px;
 	 background-color: #6FB1FF;
 }
 
