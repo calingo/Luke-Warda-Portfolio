@@ -222,7 +222,7 @@ span.styled-link {
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
-      background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Luke-Warda-Profile-Small.png') no-repeat center;
+      background: url('{{site.baseurl}}/img/website-assets/Luke-Warda-Profile-Small.png') no-repeat center;
       background-size: cover;
       display: inline-block;
       border-style: 1px solid black;
@@ -235,7 +235,7 @@ span.styled-link {
       -moz-border-radius: 20px;
       border-radius: 20px;
       /*   border: 1px solid lightgray;*/
-	  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/mail-icon.svg') no-repeat center;*/
+	  /*background: url('{{site.baseurl}}/img/website-assets/mail-icon.svg') no-repeat center;*/
       background-size: 25px;
       display: inline-block;
       background-color: none;
@@ -316,7 +316,7 @@ span.styled-link {
 }
 
 .project:nth-child(2) {
-	/*color: white;*/
+	color: white;
 	/*background-color: rgba(208,205,182,1);*/
 	/*background-color: #EEEEEE;
 */}
@@ -324,8 +324,9 @@ span.styled-link {
 .project:nth-child(3) {
 	/*background-color: rgba(0, 0, 0, 0.2);*/
 	/*background-color: #EEEEEE;*/
-	/*color: white;
-*/	/*background-color: #EEEEEE;*/
+	color: white;
+	text-shadow: 2px 0px 55px black;
+	/*background-color: #EEEEEE;*/
 }
 
 .project:nth-child(4) {
@@ -462,7 +463,7 @@ span.styled-link {
 /*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 10% 10%; */
 /*	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat 80% 0px; 
 */    
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat 80% 0px; 
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/BurberryMobileonDevice.gif') no-repeat 80% 0px; 
 	background-size: cover;
 }
 
@@ -531,6 +532,19 @@ span.styled-link {
 .about-short {
 	padding-top: 3rem;
 	padding-bottom: 0rem;
+}
+
+.highlight-4 {
+	background: rgba(111,177,255,0.2);
+	/*background: rgba(0,0,0,0.1);*/
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+}
+
+.highlight-4:hover {
+	background: rgba(111,177,255,0.8);
+	transition: background-color 0.5s ease;
+	cursor: arrow;
 }
 
 
@@ -608,7 +622,7 @@ span.styled-link {
     height: 100%;
     opacity: 1;
     z-index: 2;
-   /* background: url('{{site.baseurl}}/img/project-burberry-mobileweb/About-me.png') no-repeat;*/
+   /* background: url('{{site.baseurl}}/img/website-assets/About-me.png') no-repeat;*/
     background-position: right -170px top -100px; 
     background-size:400px;
     -webkit-transform: rotate(-0deg);
@@ -892,7 +906,7 @@ svg path {
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
-      background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Luke-Warda-Profile-Small.png') no-repeat center;
+      background: url('{{site.baseurl}}/img/website-assets/Luke-Warda-Profile-Small.png') no-repeat center;
       background-size: cover;
 	}
 
@@ -903,7 +917,7 @@ svg path {
 	      -moz-border-radius: 25px;
 	      border-radius: 25px;
 	   /*   border: 1px solid lightgray;*/
-	     /* background: url('{{site.baseurl}}/img/project-burberry-mobileweb/mail-icon.svg') no-repeat center;*/
+	     /* background: url('{{site.baseurl}}/img/website-assets/mail-icon.svg') no-repeat center;*/
 	      background-size: 30px;
 	      display: inline-block;
 	      background-color: none;
