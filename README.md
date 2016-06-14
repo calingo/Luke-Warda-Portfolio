@@ -1,2 +1,2 @@
 # Luke-Warda-Portfolio
-Portfolio of Luke Warda Product Design User Experience 
+Portfolio of Luke Warda User Experience & Product Design
