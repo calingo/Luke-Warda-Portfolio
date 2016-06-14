@@ -1,2 +1,2 @@
-baseurl: /
+url: http://www.lukewarda.com
 exclude: ['README.md']
