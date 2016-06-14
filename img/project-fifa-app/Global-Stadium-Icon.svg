@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="99px" height="136px" viewBox="0 0 99 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Global-Stadium-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.957856906" width="98.3722097" height="134.881483"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="98.3722097" height="134.881483" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="FIFA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-216.000000, -4847.000000)">
+            <g id="Pilars" transform="translate(161.000000, 4734.000000)">
+                <g id="Global-Stadium">
+                    <g id="Global-Stadium-Icon" transform="translate(55.000000, 113.000000)">
+                        <use id="Rectangle-23" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                        <path d="M1,67.9578569 L97.3747635,67.9578569" id="Path-248" stroke="#FFFFFF"></path>
+                        <polyline id="Path-248" stroke="#FFFFFF" points="30.9850032 1.26808902 30.9850032 15.2011093 66.668339 15.2011093 66.668339 1.23276441"></polyline>
+                        <polyline id="Path-248" stroke="#FFFFFF" transform="translate(48.826671, 128.216937) rotate(-180.000000) translate(-48.826671, -128.216937) " points="30.9850032 121.268089 30.9850032 135.201109 66.668339 135.201109 66.668339 121.232764"></polyline>
+                        <text id="🌍" font-family="AppleColorEmoji, Apple Color Emoji" font-size="40" font-weight="normal" fill="#A5A6A9">
+                            <tspan x="29.0535416" y="85.8786265">🌍</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

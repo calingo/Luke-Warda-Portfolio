@@ -317,6 +317,8 @@ span.styled-link {
 
 .project:nth-child(2) {
 	color: white;
+	color: white;
+	text-shadow: 2px 0px 55px black;
 	/*background-color: rgba(208,205,182,1);*/
 	/*background-color: #EEEEEE;
 */}
@@ -395,26 +397,10 @@ span.styled-link {
 	background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
 	background-position: right -10px bottom 200px;
     background-size: 100%;
-      -webkit-transform: rotate(-0deg);
-	  -moz-transform: rotate(-0deg);
-	  -ms-transform: rotate(-0deg);
-	  -o-transform: rotate(-0deg);
-	  transform: rotate(-0deg);
 	height: 600px;
-	 background-color: #6FB1FF;
+	background-color: #6FB1FF;
 }
 
-
-
-.project-image {
-	/*width: 100vw;*/
-/*	-webkit-background-size: 90%;
-	-moz-background-size: 90%;
-	-o-background-size: 90%;
-	background-size: 90%;
-	height: 550px;*/
-	/*margin-left: -1.5rem;*/
-}
 
 .project-title {
 	max-width: 92%;
@@ -426,10 +412,6 @@ span.styled-link {
 
 .subtitle {
 	max-width: 100%;
-}
-
-.project-detail {
-	
 }
 
 .project-cover {
@@ -490,7 +472,7 @@ span.styled-link {
 }
 
 .project-detail .section2 {
-	height: 680px;
+	height: 480px;
 	background-color: rgba(0,0,0,0.3);
 /*	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat center 30%; 
 */    background-size: cover;
@@ -545,6 +527,84 @@ span.styled-link {
 	background: rgba(111,177,255,0.8);
 	transition: background-color 0.5s ease;
 	cursor: arrow;
+}
+
+.img-caption {
+	padding-top: 0.5rem;
+}
+
+.img-article-width {
+    width: 100vw;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.article-media {
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+} 
+
+.padding-0 {
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/*************Project4***************/
+
+#project-4 .section1-cover {
+	height: 680px;
+	background-color: rgba(0,0,0,0.1);
+	background: url('{{site.baseurl}}/img/project-fifa-app/FIFA-Background.png') no-repeat center 30%; 
+    background-size: cover;
+	z-index: -1;
+	height: 600px;
+	top: 0;
+	position: relative;
+    overflow: hidden;
+}
+
+#project-4 .section1-cover:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.fifa-pilars {
+	
+	
+}
+
+.pilar {
+	width: 100%;
+	height: 250px;
+/*	margin-right: 1rem;*/
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;
+}
+
+.pilar-1 {
+	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat center bottom 3rem; 
+    background-size: 30%;
+}
+
+.pilar-2 {
+	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Game-On-Icon.png') no-repeat center bottom 3rem; 
+    background-size: 55%;
+    
+}
+
+.pilar-3 {
+	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat center bottom 5rem; 
+    background-size: 55%;
+    margin-right: 0;
 }
 
 
@@ -625,11 +685,6 @@ span.styled-link {
    /* background: url('{{site.baseurl}}/img/website-assets/About-me.png') no-repeat;*/
     background-position: right -170px top -100px; 
     background-size:400px;
-    -webkit-transform: rotate(-0deg);
-	  -moz-transform: rotate(-0deg);
-	  -ms-transform: rotate(-0deg);
-	  -o-transform: rotate(-0deg);
-	  transform: rotate(-0deg);
     opacity: 1;
 
 
@@ -870,6 +925,27 @@ svg path {
 		width: 80%;
 	}
 
+	.img-article-width{
+    	width: 100%;
+	    margin-left: auto;
+	}
+
+	.img-caption {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		text-align: center;
+	}
+
+	.fifa-pilars {
+		padding-left: 0.5rem;
+	}
+
+	.pilar {
+		width: calc(700px / 3);
+		height: 290px;
+	}
+
+
 }
 
 @media only screen and (min-width: 38em)  {
@@ -882,6 +958,10 @@ svg path {
 	.project-title {
 		max-width: 90%;
 	}
+
+	
+	
+	
 
 
 @media only screen and (min-width: 60em)  {
@@ -978,6 +1058,8 @@ svg path {
 	.project-detail .banner {
 		padding-bottom: 2rem;
 	}
+
+	
 	
 
 }
