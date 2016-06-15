@@ -607,6 +607,27 @@ span.styled-link {
     margin-right: 0;
 }
 
+.carousel {
+	height: 530px;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    width: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.img-carousel {
+	width: auto;
+    height: 510px;
+    margin: 20px 10px;
+    display: inline;
+}
+
+.carousel-caption {
+	display: block;
+}
+
 
 /*************Footer***************/
 
@@ -931,9 +952,9 @@ svg path {
 	}
 
 	.img-caption {
-		padding-left: 3rem;
+		/*padding-left: 3rem;
 		padding-right: 3rem;
-		text-align: center;
+		text-align: center;*/
 	}
 
 	.fifa-pilars {
@@ -1057,6 +1078,28 @@ svg path {
 
 	.project-detail .banner {
 		padding-bottom: 2rem;
+	}
+
+	.carousel {
+		height: auto;
+	    overflow: auto;
+	    overflow-y: auto;
+	    margin-left: auto;
+	    margin-right: auto;
+	    white-space: normal;
+	    width: 780px;
+	    padding-left: 0;
+
+	}
+
+	.img-carousel {
+		width: 100%;
+	    height: auto;
+	    display: block;
+	}
+
+	.carousel-caption {
+		display: none;
 	}
 
 	
