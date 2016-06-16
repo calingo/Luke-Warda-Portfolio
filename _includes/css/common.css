@@ -539,6 +539,18 @@ span.styled-link {
     margin-right: -1.5rem;
 }
 
+.img-body-width {
+	max-width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-article-inset {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .article-media {
 	padding-top: 1.5rem;
 	padding-bottom: 1rem;
@@ -608,13 +620,13 @@ span.styled-link {
 }
 
 .carousel {
-	height: 530px;
-    overflow: auto;
-    overflow-y: hidden;
+	height: initial;
+    overflow-y: hidden; 
     margin: 0 auto;
     white-space: nowrap;
     width: auto;
     -webkit-overflow-scrolling: touch;
+
 }
 
 .img-carousel {
@@ -980,6 +992,26 @@ svg path {
 		max-width: 90%;
 	}
 
+	.carousel {
+		    height: initial;
+		    /* overflow: visible; */
+		    overflow-y: visible;
+		    margin-left: auto;
+		    margin-right: auto;
+		    white-space: normal;
+		    width: 780px;
+		    padding-left: 0;
+	}
+
+	.img-carousel {
+		width: 100%;
+	    height: auto;
+	    /*display: block;*/
+	}
+
+	.carousel-caption {
+		display: none;
+	}
 	
 	
 	
@@ -1080,27 +1112,7 @@ svg path {
 		padding-bottom: 2rem;
 	}
 
-	.carousel {
-		height: auto;
-	    overflow: auto;
-	    overflow-y: auto;
-	    margin-left: auto;
-	    margin-right: auto;
-	    white-space: normal;
-	    width: 780px;
-	    padding-left: 0;
-
-	}
-
-	.img-carousel {
-		width: 100%;
-	    height: auto;
-	    display: block;
-	}
-
-	.carousel-caption {
-		display: none;
-	}
+	
 
 	
 	
