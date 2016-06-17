@@ -590,16 +590,18 @@ span.styled-link {
 }
 
 .fifa-pilars {
-	
+	display: flex;
+	flex-direction: column;
 	
 }
 
 .pilar {
 	width: 100%;
 	height: 250px;
-/*	margin-right: 1rem;*/
+	margin-bottom: 0.5rem;
     padding: 1rem;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;*/
+
 }
 
 .pilar-1 {
@@ -610,6 +612,7 @@ span.styled-link {
 .pilar-2 {
 	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Game-On-Icon.png') no-repeat center bottom 3rem; 
     background-size: 55%;
+    /*margin-left: 9px;*/
     
 }
 
@@ -617,6 +620,7 @@ span.styled-link {
 	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat center bottom 5rem; 
     background-size: 55%;
     margin-right: 0;
+  /*  float: right;*/
 }
 
 .carousel {
@@ -626,13 +630,14 @@ span.styled-link {
     white-space: nowrap;
     width: auto;
     -webkit-overflow-scrolling: touch;
+    padding-right: 15%;
 
 }
 
 .img-carousel {
 	width: auto;
     height: 510px;
-    margin: 20px 10px;
+    /*margin: 20px 10px;*/
     display: inline;
 }
 
@@ -640,6 +645,34 @@ span.styled-link {
 	display: block;
 }
 
+.img-duo-l {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-collection-res {
+	height: 250px;
+}
+
+.img-res-1 {
+	background: url('{{site.baseurl}}/img/project-fifa-app/Research-1.png') no-repeat;
+	background-size: 120%;
+}
+
+.img-res-2 {
+	background: url('{{site.baseurl}}/img/project-fifa-app/Research-2.png') no-repeat;
+	background-size: 120%;
+}
+
+.img-res-3 {
+	background: url('{{site.baseurl}}/img/project-fifa-app/Research-3.png') no-repeat;
+	background-size: 120%;
+}
+
+.img-res-4 {
+	background: url('{{site.baseurl}}/img/project-fifa-app/Research-4.png') no-repeat;
+	background-size: 120%;
+}
 
 /*************Footer***************/
 
@@ -969,14 +1002,58 @@ svg path {
 		text-align: center;*/
 	}
 
-	.fifa-pilars {
-		padding-left: 0.5rem;
+	/*.fifa-pilars {
+		padding-left: 0.5rem;\
+		text-align: center;
 	}
 
 	.pilar {
-		width: calc(700px / 3);
-		height: 290px;
+		width: calc(100% / 3 - 10px);
+    	height: 290px;
+	}*/
+
+	.fifa-pilars {
+		flex-direction: row;
 	}
+
+	.pilar {
+		margin: 0.5rem;
+	    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;*/
+
+	}
+
+	.pilar:nth-child(1) {
+		margin-left: 0;
+	}
+
+	.pilar:nth-child(3) {
+		margin-right: 0;
+	}
+
+	.carousel {
+		    height: initial;
+		    /* overflow: visible; */
+		    margin: initial;
+		    overflow-y: visible;
+		    margin-left: auto;
+		    margin-right: auto;
+		    white-space: normal;
+		    max-width: 780px;
+		    padding: 0;
+	}
+
+	.img-carousel {
+		width: 100%;
+	    height: auto;
+	    /*display: block;*/
+	}
+
+	.carousel-caption {
+		display: none;
+	}
+
+
+	
 
 
 }
@@ -992,27 +1069,7 @@ svg path {
 		max-width: 90%;
 	}
 
-	.carousel {
-		    height: initial;
-		    /* overflow: visible; */
-		    overflow-y: visible;
-		    margin-left: auto;
-		    margin-right: auto;
-		    white-space: normal;
-		    width: 780px;
-		    padding-left: 0;
-	}
 
-	.img-carousel {
-		width: 100%;
-	    height: auto;
-	    /*display: block;*/
-	}
-
-	.carousel-caption {
-		display: none;
-	}
-	
 	
 	
 
@@ -1112,7 +1169,10 @@ svg path {
 		padding-bottom: 2rem;
 	}
 
-	
+	.img-duo-l {
+		margin-right: initial;
+		margin-left: initial;
+	}
 
 	
 	
