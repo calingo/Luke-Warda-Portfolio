@@ -597,20 +597,20 @@ span.styled-link {
 
 .pilar {
 	width: 100%;
-	height: 250px;
-	margin-bottom: 0.5rem;
-    padding: 1rem;
+	height: 280px;
+	margin-bottom: 0rem;
+    padding: 1.5rem;
     /*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;*/
 
 }
 
 .pilar-1 {
-	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat center bottom 3rem; 
+	background: rgba(111,177,255,0.8) url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat center bottom 3rem; 
     background-size: 30%;
 }
 
 .pilar-2 {
-	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Game-On-Icon.png') no-repeat center bottom 3rem; 
+	background: rgba(111,177,255,0.9) url('{{site.baseurl}}/img/project-fifa-app/Game-On-Icon.png') no-repeat center bottom 3rem; 
     background-size: 55%;
     /*margin-left: 9px;*/
     
@@ -656,22 +656,22 @@ span.styled-link {
 
 .img-res-1 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-1.png') no-repeat;
-	background-size: 120%;
+	background-size: 101%;
 }
 
 .img-res-2 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-2.png') no-repeat;
-	background-size: 120%;
+	background-size: 101%;
 }
 
 .img-res-3 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-3.png') no-repeat;
-	background-size: 120%;
+	background-size: 101%;
 }
 
 .img-res-4 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-4.png') no-repeat;
-	background-size: 120%;
+	background-size: 101%;
 }
 
 /*************Footer***************/
