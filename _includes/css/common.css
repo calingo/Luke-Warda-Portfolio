@@ -604,7 +604,7 @@ span.styled-link {
 
 }
 
-.pilar-1 {
+/*.pilar-1 {
 	background: rgba(111,177,255,0.8) url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat center bottom 3rem; 
     background-size: 30%;
 }
@@ -614,14 +614,14 @@ span.styled-link {
     background-size: 55%;
     /*margin-left: 9px;*/
     
-}
+/*}*/
 
-.pilar-3 {
+/*.pilar-3 {
 	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat center bottom 5rem; 
     background-size: 55%;
     margin-right: 0;
-  /*  float: right;*/
-}
+  
+}*/
 
 .carousel {
 	height: initial;
@@ -641,6 +641,62 @@ span.styled-link {
     display: inline;
 }
 
+.download-app {
+	display: flex;
+}
+
+.download-app-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.app-icon {
+	width: 120px;
+	height: 120px;
+}
+
+.fifa-app-icon {
+	background: url('{{site.baseurl}}/img/project-fifa-app/FIFA-App-Icon.png') no-repeat;
+	background-size: cover;
+}
+
+.app-store-button {
+	margin: 0;
+	margin-left: 1rem;
+	padding: 1rem;
+/*	border: 1px solid black;*/
+	text-align: left;
+	/*border-radius: 0.3rem;*/
+	background: url('{{site.baseurl}}/img/project-fifa-app/app-store-available.png') no-repeat;
+	background-size: 74%;
+    width: 130px;
+	text-decoration: underline;
+	margin-top: 1.5rem;
+}
+
+.app-store-button a {
+	content: "";
+	opacity: 0;
+}
+ 
+.play-store-button {
+	margin: 0;
+	margin-left: 1rem;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+/*	border: 1px solid black;*/
+	/*border-radius: 0.3rem;*/
+	background-color: white;
+	background: url('{{site.baseurl}}/img/project-fifa-app/play-store-available.png') no-repeat;
+	background-size: 75%;
+    width: 130px;
+	text-align: left;
+	text-decoration: underline;
+	
+}
+
+
 .carousel-caption {
 	display: block;
 }
@@ -656,12 +712,12 @@ span.styled-link {
 
 .img-res-1 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-1.png') no-repeat;
-	background-size: 101%;
+	background-size: 110%;
 }
 
 .img-res-2 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-2.png') no-repeat;
-	background-size: 101%;
+	background-size: 110%;
 }
 
 .img-res-3 {
@@ -672,6 +728,64 @@ span.styled-link {
 .img-res-4 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-4.png') no-repeat;
 	background-size: 101%;
+}
+
+.section-cover-large {
+	height: 580px;
+}
+
+.section-cover-text {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6rem;
+}
+
+.global-stadium-background {
+	background: rgba(111,177,255,1) url('/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat left 75% bottom 50% !important;
+	background-size: 20% !important;
+}
+
+.game-on-background {
+	background: rgba(111,177,255,1) url('/img/project-fifa-app/Game-On-Icon.png') no-repeat left 75% bottom 50% !important;
+	background-size: 30% !important;
+}
+
+.responsible-brand-background {
+	background: rgba(111,177,255,1) url('/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat left 75% bottom 40% !important;
+	background-size: 40% !important;
+}
+
+.launch-background {
+	background: black url('/img/project-fifa-app/FIFA-Background.png') no-repeat center !important;
+	background-size: cover;
+}
+
+hr.section-divider {
+    margin-top: 52px;
+    margin-bottom: 42px;
+}
+hr.section-divider {
+    display: block;
+    border: 0;
+    text-align: center;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+hr.section-divider:before {
+    font-size: 28px;
+    letter-spacing: .6em;
+}
+hr.section-divider:before {
+    content: '...';
+    display: inline-block;
+    margin-left: .5em;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: -20px;
 }
 
 /*************Footer***************/
