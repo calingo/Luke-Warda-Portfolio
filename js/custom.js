@@ -20,14 +20,56 @@
 
 // });
 
+// var timeout = false;
+// var loadedimages = false;
+
+// setTimeout(function() {
+//     console.log("TIMEOUT!");
+//     if (loadedimages == true) hideloadingdiv();
+//     else timeout = true;
+
+// }, 3000);
+
+// $("html").css({overflow: 'hidden' })
+
+
+// $('html').waitForImages({
+//     waitForAll: true,
+//     finished: function() {
+//        if (timeout == true) {
+//            hideloadingdiv();
+//        }
+//        else
+//        {
+//            loadedimages = true;
+//        }
+//     }  
+// });
+
+// function hideloadingdiv()
+// {
+//     $('#loading').css({display: 'none'});
+//     $("html").css({overflow: 'scroll' });
+//     $('html').unbind('touchmove');
+// }
+
+// $(document).ready(function(){
+
+// /*! Fades in page on load */
+// $('body').css('display', 'none');
+// $('body').fadeIn(500);
+
+// });
+
+
 // $(function(){
 //   'use strict';
 //   var options = {
 //     prefetch: true,
-//     cacheLength: 1,
-//     scroll: false,
+//     cacheLength: 3,
+//     scroll: true,
 //     onStart: {
-//       duration: 300, // Duration of our animation
+//       duration: 100, // Duration of our animation
 //       render: function ($container) {
 //         // Add your CSS animation reversing class
 //         $container.addClass('is-exiting');

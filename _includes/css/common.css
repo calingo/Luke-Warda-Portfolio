@@ -53,6 +53,15 @@ ul {
 	list-style-type: none;
 }
 
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
 
 /*************Icons***************/
 /*SVG Icons - svgicons.sparkk.fr*/
@@ -105,6 +114,10 @@ ul {
 
 .span-90 {
 	width: 100%
+}
+
+.span-50 {
+	width: 60%
 }
 
 .gutter {
@@ -271,7 +284,7 @@ span.styled-link {
 
 .banner {
 	padding-top: 2rem;
-	padding-bottom: 3rem;
+	padding-bottom: 1.5rem;
 }
 
 .heading {
@@ -317,24 +330,25 @@ span.styled-link {
 
 .project:nth-child(2) {
 	color: white;
-	color: white;
-	text-shadow: 2px 0px 55px black;
+/*	text-shadow: 2px 0px 55px black;*/
 	/*background-color: rgba(208,205,182,1);*/
-	/*background-color: #EEEEEE;
-*/}
+	background-color: black;
+}
 
 .project:nth-child(3) {
 	/*background-color: rgba(0, 0, 0, 0.2);*/
 	/*background-color: #EEEEEE;*/
-	color: white;
-	text-shadow: 2px 0px 55px black;
+/*	color: white;*/
+/*	text-shadow: 2px 0px 55px black;*/
+	background-color: black;
 	/*background-color: #EEEEEE;*/
 }
 
 .project:nth-child(4) {
+	color: white;
 	/*background-color: rgba(233,233,233,1);*/
 	/*background-color: #EEEEEE;*/
-	/*background-color: #6FB1FF;*/
+	/*background-color: #4180BA;*/
 }
 
 .project:before {
@@ -375,6 +389,8 @@ span.styled-link {
     background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat left 30% top 0px; 
     background-size: 180%;
     height: 600px;
+    opacity: 0.9;
+    background-color: black;
 }
 
 .project:nth-child(3):before {
@@ -382,9 +398,11 @@ span.styled-link {
     background-size: 230%;*/
     opacity: 1;
     /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
-    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% top 0px ; 
+    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% bottom 1rem; 
     background-size: 220%;
     height: 600px;
+    opacity: 1;
+   
 }
 
 .project:nth-child(4):before {
@@ -398,7 +416,7 @@ span.styled-link {
 	background-position: right -10px bottom 200px;
     background-size: 100%;
 	height: 600px;
-	background-color: #6FB1FF;
+	background-color: #225e97;
 }
 
 
@@ -407,7 +425,7 @@ span.styled-link {
 	opacity: 1;
 	z-index: 2;
 	position: absolute;
-    top: calc(400px + 2rem);
+    top: calc(400px + 3rem);
 }
 
 .subtitle {
@@ -447,6 +465,7 @@ span.styled-link {
 */    
 	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/BurberryMobileonDevice.gif') no-repeat 80% 0px; 
 	background-size: cover;
+	opacity: 0.9;
 }
 
 .project3 .project-cover:before {
@@ -454,6 +473,7 @@ span.styled-link {
 */    
 	background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat 0px; 
 	background-size: cover;
+
 }
 
 .project4 .project-cover:before {
@@ -461,7 +481,7 @@ span.styled-link {
 	background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
 	background-position: right -10px bottom -30px;
     background-size: 100%;
-    background-color: #6FB1FF;
+    background-color: #225e97;
 }
 
 .project-detail .section1 {
@@ -517,16 +537,19 @@ span.styled-link {
 }
 
 .highlight-4 {
-	background: rgba(111,177,255,0.2);
+	/*background: rgba(111,177,255,0.2);*/
 	/*background: rgba(0,0,0,0.1);*/
+	background: rgba(34,94,151,0.2);
 	padding-left: 0.2rem;
 	padding-right: 0.2rem;
 }
 
 .highlight-4:hover {
-	background: rgba(111,177,255,0.8);
+	/*background: rgba(111,177,255,0.3);*/
+	/*background: rgba(0,0,0,0.2);*/
+	background: rgba(34,94,151,0.3);
 	transition: background-color 0.5s ease;
-	cursor: arrow;
+	cursor: pointer;
 }
 
 .img-caption {
@@ -592,14 +615,19 @@ span.styled-link {
 .fifa-pilars {
 	display: flex;
 	flex-direction: column;
-	
 }
+
+.pilars {
+		font-size: 1.5rem;
+/*    	color: #4180BA;*/
+    	width: 100%;
+	}
 
 .pilar {
 	width: 100%;
-	height: 280px;
+	/*height: 280px;*/
 	margin-bottom: 0rem;
-    padding: 1.5rem;
+   /* padding: 1.5rem;*/
     /*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;*/
 
 }
@@ -617,7 +645,7 @@ span.styled-link {
 /*}*/
 
 /*.pilar-3 {
-	background: rgba(111,177,255,1) url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat center bottom 5rem; 
+	background: #4180BA url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat center bottom 5rem; 
     background-size: 55%;
     margin-right: 0;
   
@@ -631,7 +659,6 @@ span.styled-link {
     width: auto;
     -webkit-overflow-scrolling: touch;
     padding-right: 15%;
-
 }
 
 .img-carousel {
@@ -727,7 +754,7 @@ span.styled-link {
 
 .img-res-4 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-4.png') no-repeat;
-	background-size: 101%;
+	background-size: 110%;
 }
 
 .section-cover-large {
@@ -738,33 +765,35 @@ span.styled-link {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 6rem;
+	margin-top: 3rem;
+	color: white;
 }
 
 .global-stadium-background {
-	background: rgba(111,177,255,1) url('/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat left 75% bottom 50% !important;
-	background-size: 20% !important;
-}
-
-.game-on-background {
-	background: rgba(111,177,255,1) url('/img/project-fifa-app/Game-On-Icon.png') no-repeat left 75% bottom 50% !important;
+	background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat left 80% bottom 30% !important;
 	background-size: 30% !important;
 }
 
+.game-on-background {
+	background: #225e97 url('/img/project-fifa-app/Game-On-Icon.png') no-repeat left 75% bottom 40% !important;
+	background-size: 50% !important;
+}
+
 .responsible-brand-background {
-	background: rgba(111,177,255,1) url('/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat left 75% bottom 40% !important;
+	background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat left 75% bottom 40% !important;
 	background-size: 40% !important;
 }
 
 .launch-background {
-	background: black url('/img/project-fifa-app/FIFA-Background.png') no-repeat center !important;
-	background-size: cover;
+	background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Launch-Icon.png') no-repeat left 75% bottom 30% !important;
+	background-size: 25% !important;
 }
 
 hr.section-divider {
-    margin-top: 52px;
-    margin-bottom: 42px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
+
 hr.section-divider {
     display: block;
     border: 0;
@@ -787,6 +816,8 @@ hr.section-divider:before {
     position: relative;
     top: -20px;
 }
+
+.drop-cap { float: left; font-size: 6rem; line-height: 5rem; padding-top: 0.1rem; padding-right: 0.3rem; padding-left: 0rem; }
 
 /*************Footer***************/
 
@@ -884,7 +915,7 @@ hr.section-divider:before {
 
   /** Basic styles for an animated element */
 .m-scene .scene_element {
-	animation-duration: 0.5s;
+	animation-duration: 1s;
 	transition-timing-function: ease-in;
 	animation-fill-mode: both;
 }
@@ -964,16 +995,12 @@ html {
   
   0% {
     opacity: 0;
-    transform: translate3d(0, 20%, 0);
-  }
-
-  80% {
-    opacity: .9;
+   /* transform: translate3d(0, 20%, 0);*/
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    /*transform: translate3d(0, 0, 0);*/
   }
 
 }
@@ -1130,6 +1157,7 @@ svg path {
 		flex-direction: row;
 	}
 
+
 	.pilar {
 		margin: 0.5rem;
 	    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;*/
@@ -1167,7 +1195,6 @@ svg path {
 	}
 
 
-	
 
 
 }
@@ -1181,10 +1208,73 @@ svg path {
 	
 	.project-title {
 		max-width: 90%;
+		top: calc(400px + 2rem);
 	}
 
 
+	.project:nth-child(1):before {
+	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
+   	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 50%; 
+    */background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat right -600px bottom 0px; 
+	background-size: 110%;
+	background-color: #eee;
+}
+
+	.project:nth-child(2):before {
+	/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
+	*/  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Holdinghand.svg') no-repeat 85% 0px; */
+	    
+	    background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat left 30% top 0px; 
+	    background-size: 100%;
+	    
+	}
+
+	.project:nth-child(3):before {
+	/*	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
+	    background-size: 230%;*/
+	    /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
+	    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% top -170px ; 
+	    background-size: 160%;
+	    height: 600px;
+	}
+
+	.project:nth-child(4):before {
+	/*	content: '';
+		position: absolute;*/
+	/*	top: -50%;
+	    left: -50%;
+	    width: 100%;
+	    height: 100%;*/
+		background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
+		background-position: right -10px bottom 200px;
+	    background-size: 100%;
+		height: 600px;
+		background-color: #225e97;
+	}
 	
+	.subtitle {
+		max-width: 80%;
+	}
+
+	.global-stadium-background {
+		background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Global-Stadium-Icon.png') no-repeat left 70% bottom 30% !important;
+		background-size: 15% !important;
+	}
+
+	.game-on-background {
+		background: #225e97 url('/img/project-fifa-app/Game-On-Icon.png') no-repeat left 70% bottom 40% !important;
+		background-size: 25% !important;
+	}
+
+	.responsible-brand-background {
+		background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Responsible-Brand-Icon.png') no-repeat left 70% bottom 40% !important;
+		background-size: 25% !important;
+	}
+
+	.launch-background {
+		background: #225e97 url('{{site.baseurl}}/img/project-fifa-app/Launch-Icon.png') no-repeat left 70% bottom 30% !important;
+		background-size: 10% !important;
+	}
 	
 
 
@@ -1286,6 +1376,47 @@ svg path {
 	.img-duo-l {
 		margin-right: initial;
 		margin-left: initial;
+	}
+
+	.project:nth-child(1):before {
+	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
+   	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 50%; 
+    */background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat -45% -50px; 
+	background-size: 170%;
+    background-color: #eee;
+	}
+
+	.project:nth-child(2):before {
+	/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
+	*/  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Holdinghand.svg') no-repeat 85% 0px; */
+	    
+	    background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat left 30% top 0px; 
+	    background-size: 180%;
+	    height: 600px;
+	}
+
+	.project:nth-child(3):before {
+	/*	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
+	    background-size: 230%;*/
+/*	    opacity: 1;*/
+	    /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
+	    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% top 0px ; 
+	    background-size: 220%;
+	    height: 600px;
+	}
+
+	.project:nth-child(4):before {
+	/*	content: '';
+		position: absolute;*/
+	/*	top: -50%;
+	    left: -50%;
+	    width: 100%;
+	    height: 100%;*/
+		background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
+		background-position: right -10px bottom 200px;
+	    background-size: 100%;
+		height: 600px;
+		background-color: #225e97;
 	}
 
 	
