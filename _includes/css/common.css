@@ -37,7 +37,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 	position: relative;
- 	
+	white-space: normal;
 }
 
 p {
@@ -71,6 +71,10 @@ a:hover:after {
 
 .download-app a:hover:after {
 	width: 0%;
+}
+
+a.project-link {
+	white-space: normal;
 }
 
 /*ul.projects:nth-child(even) a:after {
@@ -1296,6 +1300,12 @@ svg path {
 
 @media only screen and (min-width: 25em)  {
 
+	a {
+		text-decoration: none;
+		color: inherit;
+		position: relative;
+		white-space: nowrap;
+	}
 
 
 	nav li {
