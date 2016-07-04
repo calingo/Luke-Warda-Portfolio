@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<div class="project-detail project4" id="project-4">
+<div class="project-detail project4" id="project-4" style="colro">
 	
   	<div class="content-max margin-center header-padding-push scene_element scene_element--fadein" >
   		<div class="banner unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
 				{% for project in site.pages %}
 					{% if project.folder == 'project-fifa-app' %}
 						<h1 class="heading header-big gutter ">{{project.subtitle}}</h1>
-						<h3 class="gutter giga subheading">{{project.tags}}</h3>
+						<h3 class="gutter giga subheading opacity-50">{{project.tags}}</h3>
 					{% endif %}
 				{% endfor %}
 		</div>		
   	</div>
   	<div class="">
-	  	<div class="project-cover scene_element scene_element--fadeinup">
+	  	<div class="project-cover scene_element">
 	  	</div>
 	  	<section id="section-intro" class="article-max margin-center pad-top-double">
 		  	<div class="unit gutter">
@@ -31,29 +31,30 @@ layout: default
 		  		</div>
 		  	</div>
 	  	</section>
+
+
 	  	
 	  	
 		
+	<div class="project-4-background pad-top pad-bottom-double">
+		 <section id="section-product-showcase" class="body-max margin-center pad-top">
+			  	<div class="">
 
-	  	<section id="section-2" class="body-max margin-center pad-top">
-		  	<div class="">
-
-			  	<div class="carousel">
-			  		<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-1.png" class="img-carousel">
-				  	<!-- <img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-2.png" alt="FIFA APP Comp 2" class="img-carousel"> -->
-				  	<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-3.png"  class="img-carousel">
-				  	<!-- <img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-4.png" alt="FIFA APP Comp 4" class="img-carousel"> -->
-				  	<!-- <img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-5.png" alt="FIFA APP Comp 5" class="img-carousel">
-				  	<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-6.png" alt="FIFA APP Comp 6" class="img-carousel"> -->
-					<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-2.png" class="img-carousel">
-					<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-5.png" class="img-carousel">
+				  	<div class="carousel">
+					  	<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-1.png" class="img-carousel">
+					  	<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-3.png"  class="img-carousel">
+					  	<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-2.png" class="img-carousel">
+						<img src="{{site.baseurl}}/img/project-fifa-app/FIFA-Comp-5.png" class="img-carousel">
+					</div>
 				</div>
-			</div>
+			</section>
 		</section>
 		<div class="article-max margin-center">
-			<figcaption class="gutter img-capti on carousel-caption opacity-50 micro">Scroll left to explore</figcaption>
+			<figcaption class="gutter img-capti on carousel-caption opacity-50 micro pad-bottom-double">Scroll left to explore</figcaption>
 		</div>
 		</section>
+	</div>
+	  	
 	  	<section id="section-1" class="article-max margin-center pad-top-double">
 		  	<div class="unit gutter">
 		  		<h3 class="text-upper unit unit-xs-1 unit-s-1 unit-m-1-3-4 unit-l-3-4">Background & Role</h3>
@@ -65,11 +66,10 @@ layout: default
 				<h3 class="text-upper unit unit-xs-1 unit-s-1 unit-m-1-3-4 unit-l-3-4">Project Goals</h3>
 		  		<p class="giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">Together with FIFA we identified three main goals for the app:</p>
 				<ol class="giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-					<li>Users should be <span class="highlight-4">engaged</span> with the app despite games themselves being unavailable in the app. The engagement should happen before, during and after the games.</li>
-					<li>Both everyday football fans and people tuning in just for the event should feel that the app is <span class="highlight-4">valuable</span> and enjoyable.</li>
-					<li>Thanks to the app users should have a <span class="highlight-4">perception</span> of FIFA as a socially responsible and inclusive brand, highlighting organisation's social and charitable work around the world.</li>
+					<li><span class="highlight-4">Users should be engaged with the app despite games themselves being unavailable in the app. The engagement should happen before, during and after the games.</span></li>
+					<li><span class="highlight-4">Both everyday football fans and people tuning in just for the event should feel that the app is valuable and enjoyable.</span></li>
+					<li><span class="highlight-4">Thanks to the app users should have a perception of FIFA as a socially responsible and inclusive brand, highlighting organisation's social and charitable work around the world.</span></li>
 				</ol>
-				<!-- <p class="micro opacity-50 unit-xs-1 unit-s-1 unit-m-1 unit-l-1">Other considerations and constraints: a) The app had to be devised using existing APIs from FIFA’s website; b) The app needed to work across multiple OS’s and support older devices as well as 5 languages.</p> -->
 		  	</div>
 	  	</section>
 	  	<section id="section-3" class="article-max margin-center pad-top">
@@ -90,12 +90,11 @@ layout: default
 		</section>
 		<section id="section-4" class="article-max margin-center pad-top pad-bottom-double">
 			<div class="unit gutter">
-				<h3 class="text-upper unit unit-xs-1 unit-s-1 unit-m-1-3-4 unit-l-3-4">Guiding Themes</h3>
 				<p class="giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">At the end of the creative discovery, we solidified three themes we wanted to guide this project. All this was to have a point of reference later on in delivery that we could look back to to assess priority of features and ideas. These were: </p>
 					<ol class="pad-top giga pad-bottom unit unit-xs-1 unit-s-1 unit-m-1-3-4 unit-l-3-4 pilars pilar">
-						<li><h1 class="">Global Stadium</h3></li>
-						<li><h1 class="">Game On</h3></li>
-						<li><h1 class="">Responsible Brand</h3></li>
+						<li><h3 class="">Global Stadium</h3></li>
+						<li><h3 class="">Game On</h3></li>
+						<li><h3 class="">Responsible Brand</h3></li>
 					</ol>
 			</div>
 			<!-- <div class="article-media giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 fifa-pilars">
@@ -133,7 +132,7 @@ layout: default
 		  		<figcaption class="img-caption opacity-50 micro">Each World Cup was presented as a chapter in history allowing users to jump into both the most recent games as well as historic archives of sport. This idea was prototyped in Quartz Composer.</figcaption>
 		  	</div>
 	  	</section>
-	  	<div class="section-cover-large game-on-background pad-top-double pad-bottom-double">
+	  	<div class="section-cover-large game-on-background pad-top pad-bottom-double">
 	  		<div class="unit gutter section-cover-text article-max margin-center pad-top-double unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
 		  		<h1 class="heading header-big ">Game<br>On</h1>
 	  		</div>
@@ -198,8 +197,11 @@ layout: default
 		  		<p class="giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">It’s now 3 years since we were commissioned to work on this project. While I still feel this is one of best projects I’ve worked on to date, I can’t help but scrutinise some of the decisions we made. In particular&mdash;given a chance&mdash;I would refine the use of iconography and redesign the main navigation to help drive traffic to all the sections of the app. I would also give more attention to the notifications strategy which I feel are becoming a platform in their own right.</p> 
 
 		  		<p class="giga unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">Looking forward to the next version of the app for the 2018 World Cup in Russia! 👟⚽️</p>
-		  		<p class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 opacity-50">Special thanks to everyone who worked on this project. It was an amazing privilege to witness your tireless work ethic, talent and craftsmanship. Till next time!</p>
 		  	</div>
 	  	</section>
 	</div>
 </div>
+
+<footer class="footer span-100 bg-color-light-gray">
+		 {% include footer.html %}
+</footer>

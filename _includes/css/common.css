@@ -36,11 +36,56 @@ h5 {
 a {
 	text-decoration: none;
 	color: inherit;
+	position: relative;
+ 	
 }
 
-a:hover {
-	text-decoration: none;
+p {
+	font-size: 95%;
 }
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid rgba(0,0,0,0.8);
+  mix-blend-mode: invert;
+  transition: 0.3s;
+}
+
+nav a:after {
+	bottom: -7px;
+	border-bottom: 3px solid rgba(255,255,255,1);
+	width: 0%;
+}
+
+nav a:hover:after {
+	width: 100%;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.download-app a:hover:after {
+	width: 0%;
+}
+
+/*ul.projects:nth-child(even) a:after {
+	bottom: -1px;
+	border-bottom: 1000px solid rgba(0,0,0,0.2);
+	width: 0%;
+}
+
+ul.projects:nth-child(odd) a:hover:after {
+	bottom: -1px;
+	border-bottom: 1000px solid rgba(0,0,0,0.2);
+	width: 100%;
+}*/
+
+
 
 body {
 	margin-left: auto;
@@ -62,6 +107,9 @@ img[data-src] {
 	opacity: 0;
 }
 
+p li {
+	opacity: 0.8;
+}
 
 /*************Icons***************/
 /*SVG Icons - svgicons.sparkk.fr*/
@@ -104,7 +152,7 @@ img[data-src] {
 }
 
 .article-max {
-	max-width: 700px;
+	max-width: 650px;
 }
 
 .viewport-max {
@@ -113,11 +161,15 @@ img[data-src] {
 }
 
 .span-90 {
-	width: 100%
+	width: 100%;
 }
 
 .span-50 {
-	width: 60%
+	width: 60%;
+}
+
+.span-100 {
+	width: 100%;
 }
 
 .gutter {
@@ -129,6 +181,9 @@ img[data-src] {
 	padding-top: 6rem;
 }
 
+.bg-color-light-gray {
+	background-color: #F1F1F1;
+}
 
 /*************Nav***************/
 
@@ -288,7 +343,7 @@ span.styled-link {
 }
 
 .heading {
-	max-width: 95%;
+	max-width: 90%;
 }
 
 .subheading {
@@ -318,7 +373,10 @@ span.styled-link {
 	height: 580px;
 	position: relative;
     overflow: hidden;
+    background-color: black;
 }
+
+
 
 .project:nth-child(1) {
 	/*color: white;*/
@@ -361,7 +419,16 @@ span.styled-link {
     height: 100%;
     opacity: 1;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
 }
+
+.project:nth-child(even):hover:before {
+	opacity: 0.6;
+
+}
+
+
 
 .project-link {
 	position: absolute;
@@ -371,6 +438,8 @@ span.styled-link {
     height: 100%;
     z-index: 2;
 }
+
+
 
 .project:nth-child(1):before {
 	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
@@ -412,6 +481,7 @@ span.styled-link {
     left: -50%;
     width: 100%;
     height: 100%;*/
+    opacity: 1;
 	background: url('{{site.baseurl}}/img/project-fifa-app/project-fifa-app-cover.png') no-repeat;
 	background-position: right -10px bottom 200px;
     background-size: 100%;
@@ -426,16 +496,26 @@ span.styled-link {
 	z-index: 2;
 	position: absolute;
     top: calc(400px + 3rem);
+    transition: all 0.2s ease-in;
 }
 
 .subtitle {
-	max-width: 100%;
+	max-width: 90%;
+}
+
+.project:nth-child(even):hover .project-title {
+	top: calc(400px + 1.8rem);
+}
+
+.project:nth-child(even):hover .project-title h3:before {
+	opacity: 1;
+	
 }
 
 .project-cover {
-	background-color: #EEEEEE;
+	/*background-color: #EEEEEE;*/
 	/*width: 100vw;*/
-	z-index: -1;
+	z-index: 1;
 	height: 600px;
 	top: 0;
 	position: relative;
@@ -460,13 +540,13 @@ span.styled-link {
 }
 
 .project2 .project-cover:before {
-/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 10% 10%; */
-/*	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Gold.png') no-repeat 80% 0px; 
+/*	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
 */    
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/BurberryMobileonDevice.gif') no-repeat 80% 0px; 
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/BurberryMobileonDevice.gif') no-repeat 0px; 
 	background-size: cover;
-	opacity: 0.9;
+
 }
+
 
 .project3 .project-cover:before {
 /*	background: url('https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/11/21/Production/CapitalBusiness/Images/2013_STORE_COVENT_GARDEN_03.jpg?uuid=H6mDBHEcEeSICK-qHjoz7w') no-repeat right 0%; 
@@ -536,20 +616,36 @@ span.styled-link {
 	padding-bottom: 0rem;
 }
 
+.highlight-2 {
+	background: rgba(0,0,0,0.1);
+	/*color: #ae7a4c;*/
+}
+
+/*ol.highlight-4:hover {
+	/*background: rgba(111,177,255,0.3);*/
+	/*background: rgba(0,0,0,0.2);*/
+	/*background: rgba(34,145,223,0.1);
+	transition: background-color 0.5s ease;
+	cursor: pointer;
+}*/
+
 .highlight-4 {
+	/*opacity: 0.5;*/
 	/*background: rgba(111,177,255,0.2);*/
-	/*background: rgba(0,0,0,0.1);*/
-	background: rgba(34,145,223,0.2);
+	background: rgba(0,0,0,0.1);
+/*	color: rgba(15,108,193,1)*/
+	/*color: #024b8d;*/
+	/*background: rgba(34,145,223,0.2);
 	padding-left: 0.2rem;
-	padding-right: 0.2rem;
+	padding-right: 0.2rem;*/
 }
 
 .highlight-4:hover {
 	/*background: rgba(111,177,255,0.3);*/
 	/*background: rgba(0,0,0,0.2);*/
-	background: rgba(34,145,223,0.4);
+	/*background: rgba(34,145,223,0.1);
 	transition: background-color 0.5s ease;
-	cursor: pointer;
+	cursor: pointer;*/
 }
 
 .img-caption {
@@ -583,6 +679,10 @@ span.styled-link {
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.margin-b-0 {
 	margin-bottom: 0;
 }
 
@@ -749,7 +849,7 @@ span.styled-link {
 
 .img-res-3 {
 	background: url('{{site.baseurl}}/img/project-fifa-app/Research-3.png') no-repeat;
-	background-size: 101%;
+	background-size: 110%;
 }
 
 .img-res-4 {
@@ -812,12 +912,127 @@ hr.section-divider:before {
     content: '...';
     display: inline-block;
     margin-left: .5em;
-    color: rgba(0,0,0,1);
+    color: rgba(0,0,0,0.5);
     position: relative;
     top: -20px;
 }
 
 .drop-cap { float: left; font-size: 6rem; line-height: 5rem; padding-top: 0.1rem; padding-right: 0.3rem; padding-left: 0rem; }
+
+/*************Burberry Mobile***************/
+
+.project-2-background {
+	background: #d1c0b1;
+}
+
+.project-4-background {
+	background: #225e97;
+}
+
+.burberry-app-icon {
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Burberry-Icon.png') no-repeat;
+	background-size: cover;
+}
+
+.download-burberry-app-buttons {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.burberry-discovery.img-res-1 {
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-1.png') no-repeat;
+	background-size: 110%;
+	
+}
+
+.burberry-discovery.img-res-2 {
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-2.png') no-repeat;
+	background-size: 110%;
+	
+}
+
+.burberry-discovery.img-res-3 {
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-3.png') no-repeat;
+	background-size: 101%;
+	
+}
+
+.burberry-discovery.img-res-4 {
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-4.png') no-repeat;
+	background-size: 110%;
+	
+}
+
+.burberry-modern-luxury-background {
+	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Modern-Customer.png') no-repeat center;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+
+
+.burberry-seamless-commerce-background {
+	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Seamless-Commerce.png') no-repeat bottom 2rem right 35%;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+
+
+.burberry-immersive-brand-background {
+		background: #D1C0B6 url('/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat bottom right -2.5rem;
+    	background-size: 150%;
+		background-blend-mode: darken;
+	}
+
+.burberry-effortless-service-background {
+    background: #d1c0b1 url('/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 20%;
+    background-size: 256%;
+    background-blend-mode: darken;
+}
+
+.burberry-launch-background {
+    background: #d1c0b1 url('/img/project-burberry-mobileweb/Cover-Launch.png') no-repeat top 2rem right 15%;
+    background-size: 170%;
+    background-blend-mode: darken;
+}
+
+.phone-view {
+	height: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 1px 20px rgba(0,0,0, 0.2);
+
+}
+
+.margin-b-auto {
+	margin-bottom: 4px; 
+}
+
+h3 {
+	font-size: x-large;
+    opacity: 0.5;
+    text-transform: none;
+    font-variant-ligatures: initial;
+    font-weight: normal;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease-in;
+
+ }
+
+ h3:before {
+ 	transition: all 0.3s ease-in;
+    border-bottom: 1px transparent solid;
+    width: 100%;
+    height: 2px;
+ }
+
+
+
 
 /*************Footer***************/
 
@@ -1065,9 +1280,23 @@ svg path {
 		font-size: 3.6rem;
 	}
 
+	.phone-view {
+		width: 100%;
+	}
+
+	.margin-fullbleed-mobile {
+		margin-right: 1.5rem; 
+     	margin-left: -1.5rem; 
+     	width: 100vw; 
+	}
+
+	
+
 }
 
 @media only screen and (min-width: 25em)  {
+
+
 
 	nav li {
 		display: inline-block;
@@ -1195,11 +1424,17 @@ svg path {
 	}
 
 
+	
+	
 
 
 }
 
 @media only screen and (min-width: 38em)  {
+
+	
+
+
 
 	.footer-wrapper{
 		padding-left: 1.5rem;
@@ -1285,6 +1520,29 @@ svg path {
 
 
 @media only screen and (min-width: 60em)  {
+
+	.section-cover-large {
+		height: 680px;
+	}
+
+	.burberry-immersive-brand-background {
+		background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat center center;
+		background-size: cover;
+		background-blend-mode: darken;
+	}
+
+.burberry-effortless-service-background {
+	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 35%;
+	background-size: 90%;
+	background-blend-mode: darken;
+}
+
+.burberry-launch-background {
+	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Launch.png') no-repeat top 2rem right 15%;
+	background-size: 80%;
+	background-blend-mode: darken;
+}
+
 
 	nav {
 		padding-left: 0rem;
