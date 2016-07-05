@@ -1261,6 +1261,45 @@ svg path {
 
 /*************Breakpoint Exceptions***************/
 
+@media only screen and (max-width: 20em) {
+	html {
+		margin: 0;
+		padding: 0;
+		font: normal 80% 'Graphik', sans-serif;
+		box-sizing: border-box;
+		text-size-adjust: 100%;
+		background-color: white;
+		color: #111;
+		transition: all 0.3s ease-in-out 0s;
+	}
+
+	.project {
+	    height: 531px;
+	    position: relative;
+	    overflow: hidden;
+	    background-color: black;
+	}
+
+	.project:nth-child(3):before {
+	    opacity: 1;
+	    /* background: url('/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
+	    background: url('/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% bottom 1rem;
+	    background-size: 240%;
+	    height: 544px;
+	    opacity: 1;
+	}
+
+	.project:nth-child(2):before {
+	   	background-size: 200%;
+	    height: 780px;
+	    opacity: 0.9;
+	    background-color: black;
+	}
+
+	
+
+}
+
 @media only screen and (max-width: 25em)  {
 	
 	.gutter {
@@ -1297,6 +1336,8 @@ svg path {
 	
 
 }
+
+
 
 @media only screen and (min-width: 25em)  {
 
