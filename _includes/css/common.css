@@ -472,7 +472,7 @@ span.styled-link {
     opacity: 1;
     /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
     background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% bottom 1rem; 
-    background-size: 220%;
+    background-size: 225%;
     height: 600px;
     opacity: 1;
    
@@ -1366,6 +1366,8 @@ svg path {
 		max-width: 90%;
 	}
 
+
+
 	.banner {
 		
 		padding-top: 6rem;
@@ -1386,9 +1388,7 @@ svg path {
 	}
 
 
-	.footer-links {
-		display: inline-flex;
-	}
+	
 
 	.footer-links li {
 		padding-right: 1.5rem;
@@ -1406,11 +1406,11 @@ svg path {
 	}
 
 	.header-big {
-		font-size:5rem;
+		font-size:4.2rem;
 	}
 
 	.project-detail .header-big {
-		font-size: 5rem;
+		font-size: 4.2rem;
 	}
 
 	.span-90 {
@@ -1489,6 +1489,9 @@ svg path {
 @media only screen and (min-width: 38em)  {
 
 	
+	.header-big {
+			font-size:5rem;
+		}
 
 
 
@@ -1571,6 +1574,10 @@ svg path {
 		background-position: right -10px bottom -30px;
 	    background-size: 80%;
 	 
+	}
+
+	.footer-links {
+		display: inline-flex;
 	}
 	
 
