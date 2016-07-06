@@ -1261,11 +1261,11 @@ svg path {
 
 /*************Breakpoint Exceptions***************/
 
-@media only screen and (max-width: 20em) {
+@media only screen and (min-device-width: 320px)  {
 	html {
 		margin: 0;
 		padding: 0;
-		font: normal 80% 'Graphik', sans-serif;
+		font: normal 85% 'Graphik', sans-serif;
 		box-sizing: border-box;
 		text-size-adjust: 100%;
 		background-color: white;
@@ -1309,7 +1309,7 @@ svg path {
 
 }
 
-@media only screen and (max-width: 25em)  {
+@media only screen and (min-device-width : 375px) {
 
 	html {
 		margin: 0;
