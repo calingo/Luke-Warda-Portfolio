@@ -1273,6 +1273,10 @@ svg path {
 		transition: all 0.3s ease-in-out 0s;
 	}
 
+	.section-cover-large {
+	    height: 550px;
+	}
+
 	.project {
 	    height: 531px;
 	    position: relative;
@@ -1325,6 +1329,7 @@ svg path {
 
 	.phone-view {
 		width: 100%;
+		height: inherit;
 	}
 
 	.margin-fullbleed-mobile {
