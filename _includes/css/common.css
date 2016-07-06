@@ -1261,25 +1261,16 @@ svg path {
 
 /*************Breakpoint Exceptions***************/
 
-@media only screen and (min-device-width: 320px)  {
+@media only screen and (max-width: 20em) {
 	html {
 		margin: 0;
 		padding: 0;
-		font: normal 85% 'Graphik', sans-serif;
+		font: normal 80% 'Graphik', sans-serif;
 		box-sizing: border-box;
 		text-size-adjust: 100%;
 		background-color: white;
 		color: #111;
 		transition: all 0.3s ease-in-out 0s;
-	}
-
-	.phone-view {
-		width: 100%;
-		height: inherit;
-	}
-
-	.section-cover-large {
-	    height: 550px;
 	}
 
 	.project {
@@ -1309,18 +1300,7 @@ svg path {
 
 }
 
-@media only screen and (min-device-width : 375px) {
-
-	html {
-		margin: 0;
-		padding: 0;
-		font: normal 95% 'Graphik', sans-serif;
-		box-sizing: border-box;
-		text-size-adjust: 100%;
-		background-color: white;
-		color: #111;
-		transition: all 0.3s ease-in-out 0s;
-	}
+@media only screen and (max-width: 25em)  {
 	
 	.gutter {
     	padding-right: 1.4rem;
@@ -1345,7 +1325,6 @@ svg path {
 
 	.phone-view {
 		width: 100%;
-		height: inherit;
 	}
 
 	.margin-fullbleed-mobile {
