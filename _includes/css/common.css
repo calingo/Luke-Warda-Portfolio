@@ -1135,7 +1135,7 @@ h3 {
 
   /** Basic styles for an animated element */
 .m-scene .scene_element {
-	animation-duration: 1s;
+	animation-duration: 0.3s;
 	transition-timing-function: ease-in;
 	animation-fill-mode: both;
 }

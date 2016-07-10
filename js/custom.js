@@ -1,3 +1,40 @@
+// $(document).ready(function() { 
+
+//     $('img').hide();
+//     $('img').each(function(i) {
+//         if (this.complete) {
+//             $(this).fadeIn();
+//         } else {
+//             $(this).load(function() {
+//                 $(this).fadeIn();
+//             });
+//         }
+//     });
+// });
+
+$(document).ready(function() { 
+
+    $('selector').waitForImages().done(function() {
+    // All descendant images have loaded, now slide up.
+    $(this).slideUp();
+});
+    	
+});
+
+
+
+// var $el = $(".heading:first"), text = $el.text(),
+//     words = text.split(" ");
+
+// var html = "";
+// for (var i = 0; i < words.length; i++) {
+//     html += "<span>" + words[i] + " </span>";
+// };
+
+// $el.html(html).children().hide().each(function(i){
+//   $(this).delay(i*500).fadeIn(700);
+// });
+
 
 
 
@@ -57,7 +94,7 @@
 
 // /*! Fades in page on load */
 // $('body').css('display', 'none');
-// $('body').fadeIn(500);
+// $('body').fadeIn(200);
 
 // });
 
@@ -66,10 +103,10 @@
 //   'use strict';
 //   var options = {
 //     prefetch: true,
-//     cacheLength: 3,
+//     cacheLength: 10,
 //     scroll: true,
 //     onStart: {
-//       duration: 100, // Duration of our animation
+//       duration: 300, // Duration of our animation
 //       render: function ($container) {
 //         // Add your CSS animation reversing class
 //         $container.addClass('is-exiting');
