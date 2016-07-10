@@ -1,7 +1,7 @@
 html {
 	margin: 0;
 	padding: 0;
-	font: normal 100% 'Graphik', sans-serif;
+	font: normal 95% 'Graphik', sans-serif;
 	box-sizing: border-box;
 	text-size-adjust: 100%;
 	background-color: white;
@@ -42,6 +42,7 @@ a {
 
 p {
 	font-size: 95%;
+	line-height: 
 }
 
 a:after {
@@ -1271,6 +1272,10 @@ svg path {
 		background-color: white;
 		color: #111;
 		transition: all 0.3s ease-in-out 0s;
+	}
+
+	p {
+		font-size: 95%;
 	}
 
 	.section-cover-large {
