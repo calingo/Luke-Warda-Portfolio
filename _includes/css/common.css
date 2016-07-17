@@ -1493,6 +1493,10 @@ svg path {
 
 @media only screen and (min-width: 38em)  {
 
+	.giga {
+		font-size: 1.465rem;
+		line-height: 2.335rem;
+	}
 	
 	.header-big {
 			font-size:5rem;
@@ -1588,6 +1592,7 @@ svg path {
 
 
 @media only screen and (min-width: 60em)  {
+
 
 	.section-cover-large {
 		height: 680px;
