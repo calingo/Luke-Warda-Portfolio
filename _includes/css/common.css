@@ -326,9 +326,9 @@ span.styled-link {
 
 /*************Styles***************/
 
-.opacity-50 {
+/**.opacity-50 {
 	opacity: 0.5;
-}
+}**/
 
 .underline:before {
 	content: "";
