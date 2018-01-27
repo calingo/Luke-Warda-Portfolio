@@ -1507,9 +1507,6 @@ svg path {
 
 @media only screen and (min-width: 38em)  {
 
-	.img-caption {
-		text-align: center;
-	}
 
 
 	.giga {
@@ -1612,6 +1609,10 @@ svg path {
 
 @media only screen and (min-width: 60em)  {
 
+
+	.img-caption {
+		text-align: center;
+	}
 
 	.section-cover-large {
 		height: 680px;
