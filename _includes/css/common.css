@@ -508,11 +508,11 @@ span.styled-link {
 	max-width: 90%;
 }
 
-.project:nth-child(even):hover .project-title {
+.project:hover .project-title {
 	top: calc(400px + 1.8rem);
 }
 
-.project:nth-child(even):hover .project-title h3:before {
+.project:hover .project-title h3:before {
 	opacity: 1;
 	
 }
@@ -929,7 +929,7 @@ hr.section-divider:before {
 /*************Burberry Mobile***************/
 
 .project-2-background {
-	background: #d1c0b1;
+	background: #371b03;
 }
 
 .project-4-background {
@@ -973,17 +973,17 @@ hr.section-divider:before {
 }
 
 .burberry-modern-luxury-background {
-	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Modern-Customer.png') no-repeat center;
+	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Modern-Customer.png') no-repeat center;
 	background-size: cover;
-	background-blend-mode: darken;
+	background-blend-mode: exclusion;
 }
 
 
 
 .burberry-seamless-commerce-background {
-	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Seamless-Commerce.png') no-repeat bottom 2rem right 35%;
+	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Seamless-Commerce.png') no-repeat bottom 2rem right 35%;
 	background-size: cover;
-	background-blend-mode: darken;
+	background-blend-mode: exclusion;
 }
 
 
@@ -991,19 +991,19 @@ hr.section-divider:before {
 .burberry-immersive-brand-background {
 		background: #D1C0B6 url('/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat bottom right -2.5rem;
     	background-size: 150%;
-		background-blend-mode: darken;
+		background-blend-mode: exclusion;
 	}
 
 .burberry-effortless-service-background {
-    background: #d1c0b1 url('/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 20%;
+    background: #371b03 url('/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 20%;
     background-size: 256%;
-    background-blend-mode: darken;
+    background-blend-mode: exclusion;
 }
 
 .burberry-launch-background {
-    background: #d1c0b1 url('/img/project-burberry-mobileweb/Cover-Launch.png') no-repeat top 2rem right 15%;
-    background-size: 170%;
-    background-blend-mode: darken;
+    background: #371b03 url('/img/project-burberry-mobileweb/tale-of-burberry.jpeg') no-repeat;
+    background-size: cover;
+    background-blend-mode: exclusion;
 }
 
 .phone-view {
@@ -1535,7 +1535,7 @@ svg path {
 	/*background: url('http://4.bp.blogspot.com/-6Uj0Vt9V7AM/VAVaFKhbd5I/AAAAAAAAYz8/aMLd6TpF78c/s1600/My%2BBurberry%2B%E2%80%93%2BDigital%2BCampaign,%2B1%2BPiccadilly.jpg') no-repeat center 30%; 
    	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 50%; 
     */background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat right -600px bottom 0px; 
-	background-size: 110%;
+	background-size: 140%;
 	background-color: #eee;
 }
 
@@ -1615,21 +1615,21 @@ svg path {
 	}
 
 	.burberry-immersive-brand-background {
-		background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat center center;
+		background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat center center;
 		background-size: cover;
-		background-blend-mode: darken;
+		background-blend-mode: exclusion;
 	}
 
 .burberry-effortless-service-background {
-	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 35%;
-	background-size: 90%;
-	background-blend-mode: darken;
+	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Effortless-Service.png') no-repeat top 0 right 35%;
+	background-size: 140%;
+	background-blend-mode: exclusion;
 }
 
 .burberry-launch-background {
-	background: #d1c0b1 url('{{site.baseurl}}/img/project-burberry-mobileweb/Cover-Launch.png') no-repeat top 2rem right 15%;
-	background-size: 80%;
-	background-blend-mode: darken;
+	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/tale-of-burberry.jpeg') no-repeat;
+	background-size: cover;
+	background-blend-mode: exclusion;
 }
 
 
