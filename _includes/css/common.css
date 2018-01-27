@@ -157,7 +157,7 @@ p li {
 }
 
 .article-max {
-	max-width: 650px;
+	max-width: 780px;
 }
 
 .viewport-max {
@@ -1020,10 +1020,10 @@ hr.section-divider:before {
 
 h3 {
 	font-size: x-large;
-    opacity: 0.5;
+/*    opacity: 0.5;*/
     text-transform: none;
     font-variant-ligatures: initial;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0.8rem;
     transition: all 0.3s ease-in;
 
