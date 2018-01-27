@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/img/favicon.ico"/>
 </script>
 </head>
+
 <body>
 	<div class="m-scene" id="main">
 		<header class="masthead margin-center content-max header-padding">
@@ -26,6 +27,9 @@
 
 		
 	</div>
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 </body>
 
 <!-- jQuery -->
