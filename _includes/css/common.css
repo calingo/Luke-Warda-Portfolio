@@ -1441,6 +1441,7 @@ svg path {
 	}
 
 	.img-caption {
+		line-height: 1.4rem;
 		/*padding-left: 3rem;
 		padding-right: 3rem;
 		text-align: center;*/
