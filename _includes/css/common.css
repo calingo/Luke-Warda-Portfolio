@@ -540,8 +540,9 @@ span.styled-link {
 }
 
 .project1 .project-cover:before {
-/*	background: url('http://www.nssmag.com/data/images/galleries/6500/thumbs/burberry-x-3-ss14-1-20140124504811.gif') no-repeat center 30%; 
-*/    background-size: 500%;
+	background: url('{{site.baseurl}}/img/project-burberry-service-app/project-burberry-service-cover.svg') no-repeat center 30%; 
+    background-size: 100%;
+    background-color: lightgray;
 }
 
 .project2 .project-cover:before {
@@ -656,7 +657,9 @@ span.styled-link {
 .img-caption {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	text-align: center;
+/*	text-align: center;*/
+	max-width: 780px;
+    margin: auto;
 }
 
 .img-article-width {
@@ -904,7 +907,7 @@ hr.section-divider {
 hr.section-divider {
     display: block;
     border: 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 hr {
     box-sizing: content-box;
@@ -1063,8 +1066,8 @@ h3 {
 }
 
 .footer-wrapper {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 0rem;
+	padding-right: 0rem;
 }
 
 .contact {
@@ -1359,6 +1362,8 @@ svg path {
 
 	.img-caption {
 		text-align: left;
+		max-width: 780px;
+    	margin: auto;
 	}
 
 	
@@ -1521,8 +1526,8 @@ svg path {
 
 
 	.footer-wrapper{
-		padding-left: 1.5rem;
-	    padding-right: 1.5rem;
+		padding-left: 0rem;
+	    padding-right: 0rem;
 	}
 	
 	.project-title {
@@ -1611,7 +1616,9 @@ svg path {
 
 
 	.img-caption {
-		text-align: center;
+		/*text-align: center;*/
+		max-width: 780px;
+    	margin: auto;
 	}
 
 	.section-cover-large {
