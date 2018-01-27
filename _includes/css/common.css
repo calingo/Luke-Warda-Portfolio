@@ -1357,6 +1357,10 @@ svg path {
      	width: 100vw; 
 	}
 
+	.img-caption {
+		text-align: left;
+	}
+
 	
 
 }
@@ -1442,12 +1446,6 @@ svg path {
 	    margin-left: auto;
 	}
 
-	.img-caption {
-		line-height: 1.4rem;
-		/*padding-left: 3rem;
-		padding-right: 3rem;
-		text-align: center;*/
-	}
 
 	/*.fifa-pilars {
 		padding-left: 0.5rem;\
@@ -1508,6 +1506,11 @@ svg path {
 }
 
 @media only screen and (min-width: 38em)  {
+
+	.img-caption {
+		text-align: center;
+	}
+
 
 	.giga {
 		font-size: 1.465rem;
