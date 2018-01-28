@@ -992,7 +992,7 @@ hr.section-divider:before {
 
 
 .burberry-immersive-brand-background {
-		background: #D1C0B6 url('/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat bottom right -2.5rem;
+		background: #371b03 url('/img/project-burberry-mobileweb/Cover-Immersive-Brand-2.png') no-repeat bottom right -2.5rem;
     	background-size: 150%;
 		background-blend-mode: exclusion;
 	}
@@ -1004,8 +1004,8 @@ hr.section-divider:before {
 }
 
 .burberry-launch-background {
-    background: #371b03 url('/img/project-burberry-mobileweb/tale-of-burberry.jpeg') no-repeat;
-    background-size: cover;
+    background: #371b03 url('/img/project-burberry-mobileweb/tale-of-burberry.png') no-repeat;
+    background-size: contain;
     background-blend-mode: exclusion;
 }
 
@@ -1483,7 +1483,6 @@ svg path {
 
 	.carousel {
 		    height: initial;
-		    /* overflow: visible; */
 		    margin: initial;
 		    overflow-y: visible;
 		    margin-left: auto;
@@ -1638,7 +1637,7 @@ svg path {
 }
 
 .burberry-launch-background {
-	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/tale-of-burberry.jpeg') no-repeat;
+	background: #371b03 url('{{site.baseurl}}/img/project-burberry-mobileweb/tale-of-burberry.png') no-repeat;
 	background-size: cover;
 	background-blend-mode: exclusion;
 }
