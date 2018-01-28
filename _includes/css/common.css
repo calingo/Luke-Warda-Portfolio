@@ -325,9 +325,7 @@ span.styled-link {
 
 }
 
-.progressive {
-	background: none !important;
-}
+
 
 /*************Styles***************/
 
@@ -337,6 +335,10 @@ span.styled-link {
 
 .progressive--not-loaded {
 	transform: scale(1) !important;
+}
+
+.progressive {
+	background: none !important;
 }
 
 .underline:before {
@@ -1630,7 +1632,7 @@ svg path {
 	}
 
 	.section-cover-large {
-		height: 680px;
+		height: 100vh;
 	}
 
 	.burberry-immersive-brand-background {
@@ -1762,7 +1764,7 @@ svg path {
 	/*	background: url('http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-select-scene3-center-201603?wid=577&hei=597&fmt=png-alpha&qlt=95&.v=D3yk_2') no-repeat 30PX 20%; 
 	*/  /*background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Holdinghand.svg') no-repeat 85% 0px; */
 	    
-	    background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.png') no-repeat left 30% top 0px; 
+	    background: url('{{site.baseurl}}/img/project-burberry-mobileweb/DeviceinHand.jpg') no-repeat left 30% top 0px; 
 	    background-size: 180%;
 	    height: 600px;
 	}
@@ -1772,7 +1774,7 @@ svg path {
 	    background-size: 230%;*/
 /*	    opacity: 1;*/
 	    /*background: url('{{site.baseurl}}/img/project-burberry-instore/instore2.svg') no-repeat 25% 150px; */
-	    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.png') no-repeat left 30% top 0px ; 
+	    background: url('{{site.baseurl}}/img/project-burberry-instore/StoreAssociate.jpg') no-repeat left 30% top 0px ; 
 	    background-size: 220%;
 	    height: 600px;
 	}
