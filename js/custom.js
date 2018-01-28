@@ -21,6 +21,8 @@ $(document).ready(function() {
     	
 });
 
+progressively.init()
+
 
 
 // var $el = $(".heading:first"), text = $el.text(),

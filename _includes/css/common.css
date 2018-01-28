@@ -322,6 +322,11 @@ span.styled-link {
 
 .back-hidden {
 	display: none !important;
+
+}
+
+.progressive {
+	background: none !important;
 }
 
 /*************Styles***************/
@@ -329,6 +334,10 @@ span.styled-link {
 /**.opacity-50 {
 	opacity: 0.5;
 }**/
+
+.progressive--not-loaded {
+	transform: scale(1) !important;
+}
 
 .underline:before {
 	content: "";
@@ -952,25 +961,25 @@ hr.section-divider:before {
 }
 
 .burberry-discovery.img-res-1 {
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-1.png') no-repeat;
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-1.jpg') no-repeat;
 	background-size: 110%;
 	
 }
 
 .burberry-discovery.img-res-2 {
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-2.png') no-repeat;
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-2.jpg') no-repeat;
 	background-size: 110%;
 	
 }
 
 .burberry-discovery.img-res-3 {
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-3.png') no-repeat;
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-3.jpg') no-repeat;
 	background-size: 101%;
 	
 }
 
 .burberry-discovery.img-res-4 {
-	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-4.png') no-repeat;
+	background: url('{{site.baseurl}}/img/project-burberry-mobileweb/Research-4.jpg') no-repeat;
 	background-size: 110%;
 	
 }

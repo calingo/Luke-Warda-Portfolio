@@ -6,3 +6,4 @@ gulp.task('jpgs', () =>
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 );
+
